@@ -1,0 +1,41 @@
+Category Master Table
+Id, CategoryName - eg: 1, Action
+
+MemberType Master Table
+Id, MemberShipType - eg: 1, Gold
+
+RentalType Master Table
+Id, RentalType - eg:2, Dependent
+
+Status Master Table
+Id, StatusName - 1, Unpaid
+
+VideoFormat Master Table
+Id, VideoFormat - eg: 1, DVD
+
+PaymentType Master Tablex
+Id, Type - Eg : 1, Normal
+
+MovieTable
+Id, Title, CategoryId, VideoFormatId, PriceperDayRent - Eg:1,Retro,1,1,250
+
+Members Table
+Id, Name, PhoneNumber, MemberTypeId, FavCategoryId - Eg: 1, Muthu, 3920029211, 1,1
+
+Dependent Table
+Id, Name, MemberId - Eg:1,Gowtham,1
+
+CreditCard Table
+Id, MemberId, CardNumber, ExpiryDate - Eg: 1,1,233444322211,2/29
+
+Rental Table 
+Id, RentedByDate, RentalTypeId, RentedById - 1,23/09/2025, 1, 1
+
+RentalDetails
+Id, RentalId, MovieId, RentalDuration, Quantity, Amount , ReturnDate, StatusID - 1,1,1,10,1,1200,3/10/2025,Overdue
+
+Penalty Table
+Id, RentalDetailsId, PenaltyAmount, StatusId  - 1,1,500,Unpaid
+
+PaymentDetails
+Id, PaymentTypeID, RentalId, TotalAmount, PaymentDate- 1,1,1,1500,12/09/2003
