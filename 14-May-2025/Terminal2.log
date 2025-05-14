@@ -1,0 +1,28 @@
+-- step 1
+
+C:\Program Files\PostgreSQL\17\bin>psql -p 5435 -d postgre              
+-- psql (17.4)
+-- WARNING: Console code page (437) differs from Windows code page (1252)
+--          8-bit characters might not work correctly. See psql reference
+--          page "Notes for Windows users" for details.
+-- Type "help" for help.
+--
+-- postgre=# s
+
+-- step 2
+
+postgres=# select * from rental_log;
+ log_id |        rental_time         | customer_id | film_id | amount |         logged_on
+--------+----------------------------+-------------+---------+--------+----------------------------
+      2 | 2025-05-14 15:06:17.239972 |           1 |      10 |   5.99 | 2025-05-14 15:06:17.239972
+      3 | 2025-05-14 15:07:36.801568 |           1 |      10 |   5.99 | 2025-05-14 15:07:36.801568
+(2 rows)
+
+
+postgres=# select * from rental_log order by log_id desc limit 1;
+ log_id |        rental_time         | customer_id | film_id | amount |         logged_on
+--------+----------------------------+-------------+---------+--------+----------------------------
+      3 | 2025-05-14 15:07:36.801568 |           1 |      10 |   5.99 | 2025-05-14 15:07:36.801568
+(1 row)
+
+
