@@ -1,0 +1,167 @@
+-- Creation of Replication Server and Usage
+
+--step 1
+C:\Program Files\PostgreSQL\17\bin> initdb -D "C:/pri"
+
+
+-- The files belonging to this database system will be owned by user "muthukaruppanp".
+-- This user must also own the server process.
+
+-- The database cluster will be initialized with locale "English_India.1252".
+-- The default database encoding has accordingly been set to "WIN1252".
+-- The default text search configuration will be set to "english".
+
+-- Data page checksums are disabled.
+
+-- creating directory C:/pri ... ok
+-- creating subdirectories ... ok
+-- selecting dynamic shared memory implementation ... windows
+-- selecting default "max_connections" ... 100
+-- selecting default "shared_buffers" ... 128MB
+-- selecting default time zone ... Asia/Calcutta
+-- creating configuration files ... ok
+-- running bootstrap script ... ok
+-- performing post-bootstrap initialization ... ok
+-- syncing data to disk ... ok
+
+-- initdb: warning: enabling "trust" authentication for local connections
+-- initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+
+-- Success. You can now start the database server using:
+
+--     pg_ctl -D C:/pri -l logfile start
+
+-- step 2
+
+C:\Program Files\PostgreSQL\17\bin>pg_ctl -D C:\pri -o "-p 5433" -l C:\pri\logfile start
+
+-- waiting for server to start.... done
+-- server started
+
+-- Step 3
+
+C:\Program Files\PostgreSQL\17\bin>psql -p 5433 postgres -c "CREATE ROLE replicator with REPLICATION LOGIN PASSWORD 'rep_pass';"
+
+-- step 4
+
+C:\Program Files\PostgreSQL\17\bin>pg_basebackup -D C:\sec -Fp -Xs -P -R -h 127.0.0.1 -U replicator -p 54
+
+--step 5
+C:\Program Files\PostgreSQL\17\bin>pg_ctl -D C:\sec -o "-p 5435" -l C:\sec\logfile start
+
+-- waiting for server to start................................. done
+-- server started
+
+-- step 6
+
+C:\Program Files\PostgreSQL\17\bin>psql -p 5433 -d postgres
+
+-- psql (17.4)
+-- WARNING: Console code page (437) differs from Windows code page (1252)
+--          8-bit characters might not work correctly. See psql reference
+--          page "Notes for Windows users" for details.
+-- Type "help" for help.
+
+-- postgres=# select * from pg_stat_replication;
+--  pid  | usesysid |  usename   | application_name | client_addr | client_hostname | client_port |          backend_start           | backend_xmin |   state   | sent_lsn  | write_lsn | flush_lsn | replay_lsn | write_lag | flush_lag | replay_lag | sync_priority | sync_state |            reply_time
+-- ------+----------+------------+------------------+-------------+-----------------+-------------+----------------------------------+--------------+-----------+-----------+-----------+-----------+------------+-----------+-----------+------------+---------------+------------+----------------------------------
+--  8208 |    16388 | replicator | walreceiver      | 127.0.0.1   |                 |       57528 | 2025-05-14 13:03:26.250329+05:30 |              | streaming | 0/3000060 | 0/3000060 | 0/3000060 | 0/3000060  |           |           |            |             0 | async      | 2025-05-14 13:03:56.269933+05:30
+-- (1 row)
+
+-- step 7
+
+postgres=# create table rental_log(
+postgres(# log_id serial primary key,
+postgres(# rental_time timestamp,
+postgres(# customer_id int,
+postgres(# film_id int,
+postgres(# amount numeric,
+postgres(# logged_on timestamp default current_timestamp
+postgres(# );
+CREATE TABLE
+
+-- step 8
+
+postgres=# create or replace procedure sp_add_rental_log(
+postgres(# p_customer_id int,
+postgres(# p_film_id int,
+postgres(# p_amount numeric
+postgres(# )
+postgres-# Language plpgsql as $$
+postgres$# Begin
+postgres$#      Begin
+postgres$#              Insert into rental_log(rental_time,customer_id,film_id,amount)
+postgres$#              Values ( current_timestamp,p_customer_id,p_film_id,p_amount);
+postgres$#      Exception when others then
+postgres$#              Raise notice 'Error Occured: %',SQLERRM;
+postgres$#      End;
+postgres$# End;
+postgres$# $$;
+
+CREATE PROCEDURE
+
+-- step 9
+
+postgres=# create table rental_log_audit(
+postgres(# audit_id serial primary key,
+postgres(# op_type text,
+postgres(# log_id int,
+postgres(# rental_time timestamp,
+postgres(# custoemer_id int,
+postgres(# film_id int,
+postgres(# amount numeric,
+postgres(# changed_on timestamp default current_timestamp
+postgres(# );
+
+CREATE TABLE
+
+-- step 10
+
+postgres=# CREATE OR REPLACE FUNCTION log_rental_changes()
+postgres-# RETURNS trigger AS $$
+postgres$# BEGIN
+postgres$#      IF TG_OP = 'INSERT' THEN
+postgres$#                      INSERT INTO rental_log_audit(op_type, log_id, rental_time, customer_id, film_id, amount)
+postgres$#         VALUES ('Insert', NEW.log_id, NEW.rental_time, NEW.customer_id, NEW.film_id, NEW.amount);
+postgres$#      ELSIF TG_OP = 'UPDATE' THEN
+postgres$#         INSERT INTO rental_log_audit(op_type, log_id, rental_time, customer_id, film_id, amount)
+postgres$#         VALUES ('Update', NEW.log_id, NEW.rental_time, NEW.customer_id, NEW.film_id, NEW.amount);
+postgres$#     END IF;
+postgres$#
+postgres$#     RETURN NEW;
+postgres$#
+postgres$# EXCEPTION
+postgres$#     WHEN OTHERS THEN
+postgres$#         RAISE NOTICE 'Error occurred: %', SQLERRM;
+postgres$#         RETURN NEW;
+postgres$# END;
+postgres$# $$ LANGUAGE plpgsql;
+
+CREATE FUNCTION
+
+-- step 11
+
+postgres=# create trigger trg_update_On_Rental
+postgres-# after insert or update on rental_log
+postgres-# for each row
+postgres-# execute function log_rental_changes();
+
+CREATE TRIGGER
+
+-- step 12
+
+postgres=# call  sp_add_rental_log(1,10,5.99);
+CALL
+postgres=# select * from rental_log;
+ log_id |        rental_time         | customer_id | film_id | amount |         logged_on
+--------+----------------------------+-------------+---------+--------+----------------------------
+      2 | 2025-05-14 15:06:17.239972 |           1 |      10 |   5.99 | 2025-05-14 15:06:17.239972
+      3 | 2025-05-14 15:07:36.801568 |           1 |      10 |   5.99 | 2025-05-14 15:07:36.801568
+(2 rows)
+
+
+postgres=# select * from rental_log_audit;
+ audit_id | op_type | log_id |        rental_time         | customer_id | film_id | amount |         changed_on
+----------+---------+--------+----------------------------+-------------+---------+--------+----------------------------
+        2 | Insert  |      3 | 2025-05-14 15:07:36.801568 |           1 |      10 |   5.99 | 2025-05-14 15:07:36.801568
+(1 row)
