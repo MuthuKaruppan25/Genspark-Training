@@ -1,0 +1,26 @@
+status Master Table
+id, status Message
+
+Student Table
+id, Name, Email, contact no, registered_date
+
+Trainer
+id, TrainerName, Email, contact no
+
+Trainer-Expertise Table
+Trainer_id, Expertise, Experience
+
+Course Table
+id, CourseName, description, coursefee, Duration
+
+Teacher-Course Table
+id, course_id, trainer_id
+
+Student-Course Table
+id, course_id, student_id, enrolled_at
+
+Certificate Table
+id, serial_num, Student-Course_id,issue_date
+
+Payment Table
+id, student_id, course_id, status
