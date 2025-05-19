@@ -1,0 +1,15 @@
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.AssemblyInfoInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.AssemblyInfo.cs
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.csproj.CoreCompileInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.sourcelink.json
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\bin\Debug\net9.0\Task-5.exe
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\bin\Debug\net9.0\Task-5.deps.json
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\bin\Debug\net9.0\Task-5.runtimeconfig.json
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\bin\Debug\net9.0\Task-5.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\bin\Debug\net9.0\Task-5.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\refint\Task-5.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\Task-5.genruntimeconfig.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\19-May-2025\Task-5\obj\Debug\net9.0\ref\Task-5.dll
