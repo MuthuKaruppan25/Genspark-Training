@@ -1,0 +1,15 @@
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\bin\Debug\net9.0\Solid.exe
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\bin\Debug\net9.0\Solid.deps.json
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\bin\Debug\net9.0\Solid.runtimeconfig.json
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\bin\Debug\net9.0\Solid.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\bin\Debug\net9.0\Solid.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.AssemblyInfoInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.AssemblyInfo.cs
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.csproj.CoreCompileInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.sourcelink.json
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\refint\Solid.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\Solid.genruntimeconfig.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\22-May-2025\Solid\obj\Debug\net9.0\ref\Solid.dll
