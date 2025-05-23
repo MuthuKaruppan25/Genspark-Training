@@ -1,0 +1,15 @@
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.AssemblyInfoInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.AssemblyInfo.cs
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.csproj.CoreCompileInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.sourcelink.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\bin\Debug\net9.0\FlyWeight.exe
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\bin\Debug\net9.0\FlyWeight.deps.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\bin\Debug\net9.0\FlyWeight.runtimeconfig.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\bin\Debug\net9.0\FlyWeight.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\bin\Debug\net9.0\FlyWeight.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\refint\FlyWeight.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\FlyWeight.genruntimeconfig.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\FlyWeight\obj\Debug\net9.0\ref\FlyWeight.dll

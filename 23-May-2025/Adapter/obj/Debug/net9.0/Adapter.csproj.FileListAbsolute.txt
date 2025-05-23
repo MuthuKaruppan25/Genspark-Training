@@ -1,0 +1,15 @@
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.AssemblyInfoInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.AssemblyInfo.cs
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.csproj.CoreCompileInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.sourcelink.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\bin\Debug\net9.0\Adapter.exe
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\bin\Debug\net9.0\Adapter.deps.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\bin\Debug\net9.0\Adapter.runtimeconfig.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\bin\Debug\net9.0\Adapter.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\bin\Debug\net9.0\Adapter.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\refint\Adapter.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\Adapter.genruntimeconfig.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Adapter\obj\Debug\net9.0\ref\Adapter.dll
