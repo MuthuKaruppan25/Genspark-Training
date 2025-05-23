@@ -1,0 +1,15 @@
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.AssemblyInfoInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.AssemblyInfo.cs
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.csproj.CoreCompileInputs.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.sourcelink.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\bin\Debug\net9.0\Factory.exe
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\bin\Debug\net9.0\Factory.deps.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\bin\Debug\net9.0\Factory.runtimeconfig.json
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\bin\Debug\net9.0\Factory.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\bin\Debug\net9.0\Factory.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\refint\Factory.dll
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.pdb
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\Factory.genruntimeconfig.cache
+C:\Users\muthukaruppanp\Desktop\Genspark\23-May-2025\Factory\obj\Debug\net9.0\ref\Factory.dll
