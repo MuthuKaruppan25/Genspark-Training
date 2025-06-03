@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SecondWebApi.Models;
+using SecondWebApi.Models.Dtos;
 namespace SecondWebApi.Contexts;
 
 public class ClinicContext : DbContext
@@ -18,19 +19,31 @@ public class ClinicContext : DbContext
     public DbSet<Doctor> doctors { get; set; }
     public DbSet<DoctorSpeciality> doctorSpecialities { get; set; }
 
-    public DbSet<User> users { get; set; }
+    public DbSet<DoctorsBySpecialityResponseDto> doctorsBySpeciality { get; set; }
 
+    public DbSet<User> users { get; set; }
+    public async Task<List<DoctorsBySpecialityResponseDto>> DoctorsBySpeciality(string speciality)
+    {
+        return await this.Set<DoctorsBySpecialityResponseDto>()
+                    .FromSqlInterpolated($"select * from func_GetDoctorsBySpeciality({speciality})")
+                    .ToListAsync();
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Patient>().HasOne(p => p.user)
-                                        .WithOne(u => u.patient)
-                                        .HasForeignKey<Patient>(up => up.Email)
-                                        .HasConstraintName("FK_Patient_Email");
+                            .WithOne(u => u.patient)
+                            .HasForeignKey<Patient>(p => p.Email)
+                            .HasConstraintName("FK_User_Patient")
+                            .OnDelete(DeleteBehavior.Restrict);
+
         modelBuilder.Entity<Doctor>().HasOne(p => p.user)
-                                .WithOne(u => u.doctor)
-                                .HasForeignKey<Doctor>(up => up.Email)
-                                .HasConstraintName("FK_Doctor_Email");
+                                    .WithOne(u => u.doctor)
+                                    .HasForeignKey<Doctor>(p => p.Email)
+                                    .HasConstraintName("FK_User_Doctor")
+                                    .OnDelete(DeleteBehavior.Restrict);
+
+
         modelBuilder.Entity<Appointment>().HasKey(a => a.AppointmnetNumber).HasName("PK_Appointment_Number");
 
         modelBuilder.Entity<Appointment>().HasOne(app => app.Patient)

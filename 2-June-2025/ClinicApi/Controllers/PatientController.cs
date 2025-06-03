@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SecondWebApi.Interfaces;
 using SecondWebApi.Models;
@@ -61,7 +62,7 @@ namespace SecondWebApi.Controllers
             return Ok(updatedPatient);
         }
 
-       
+        [Authorize(Roles = "Patient")]
         [HttpGet("name/{name}")]
         public async Task<IActionResult> GetPatientByName(string name)
         {
