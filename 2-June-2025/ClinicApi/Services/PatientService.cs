@@ -1,6 +1,7 @@
 
 
 using System.Threading.Tasks;
+using AutoMapper;
 using SecondWebApi.Interfaces;
 using SecondWebApi.Models;
 using SecondWebApi.Models.Dtos;
@@ -8,9 +9,17 @@ using SecondWebApi.Models.Dtos;
 public class PatientService : IPatientService
 {
     private readonly IRepository<int, Patient> _repository;
+    private readonly IRepository<string, User> _userRepository;
+    private readonly IMapper _mapper;
+    private readonly IEncryptionService _encryptionService;
+    PatientAddReqMapper patientAddReqMapper;
 
-    public PatientService(IRepository<int, Patient> repository)
+    public PatientService(IRepository<int, Patient> repository, IMapper mapper, IRepository<String, User> userRepository, IEncryptionService encryptionService)
     {
+        _userRepository = userRepository;
+        patientAddReqMapper = new PatientAddReqMapper();
+        _mapper = mapper;
+        _encryptionService = encryptionService;
         _repository = repository ?? throw new ArgumentNullException(nameof(repository), "Repository cannot be null");
     }
 
@@ -19,18 +28,22 @@ public class PatientService : IPatientService
         try
         {
 
+            var user = _mapper.Map<PatientAddDto, User>(patientAddDto);
+            var encryptedData = await _encryptionService.EncryptData(new EncryptModel
+            {
+                Data = patientAddDto.Password
+            });
+            user.password = encryptedData.EncryptedData;
+            user.HashKey = encryptedData.HashKey;
+            user.role = "Doctor";
+            user = await _userRepository.Add(user);
             if (patientAddDto == null)
             {
                 throw new ArgumentNullException("Patient cannot be null");
             }
-            var patient = new Patient
-            {
-                Name = patientAddDto.Name,
-                Age = patientAddDto.Age,
-                Email = patientAddDto.Email,
-                Phone = patientAddDto.Phone
-            };
-            var addedPatient = await _repository.Add(patient);
+
+            var patient = patientAddReqMapper.MapPatientAddRequest(patientAddDto);
+            var addedPatient = await _repository.Add(patient!);
             return addedPatient;
         }
         catch (Exception ex)

@@ -58,6 +58,10 @@ namespace SecondWebApi.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -70,6 +74,9 @@ namespace SecondWebApi.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.ToTable("doctors");
                 });
@@ -97,6 +104,26 @@ namespace SecondWebApi.Migrations
                     b.ToTable("doctorSpecialities");
                 });
 
+            modelBuilder.Entity("SecondWebApi.Models.Dtos.DoctorsBySpecialityResponseDto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Dname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<float>("Yoe")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("doctorsBySpeciality");
+                });
+
             modelBuilder.Entity("SecondWebApi.Models.Patient", b =>
                 {
                     b.Property<int>("Id")
@@ -122,6 +149,9 @@ namespace SecondWebApi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
                     b.ToTable("patients");
                 });
 
@@ -146,26 +176,24 @@ namespace SecondWebApi.Migrations
                     b.ToTable("specialities");
                 });
 
-            modelBuilder.Entity("SecondWebApi.Models.User", b =>
+            modelBuilder.Entity("User", b =>
                 {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                    b.Property<string>("username")
+                        .HasColumnType("text");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
+                    b.Property<byte[]>("HashKey")
+                        .HasColumnType("bytea");
 
-                    b.Property<int>("FollwerId")
-                        .HasColumnType("integer");
+                    b.Property<byte[]>("password")
+                        .HasColumnType("bytea");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("role")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("UserId");
+                    b.HasKey("username");
 
-                    b.HasIndex("FollwerId");
-
-                    b.ToTable("User");
+                    b.ToTable("users");
                 });
 
             modelBuilder.Entity("SecondWebApi.Models.Appointment", b =>
@@ -189,6 +217,18 @@ namespace SecondWebApi.Migrations
                     b.Navigation("Patient");
                 });
 
+            modelBuilder.Entity("SecondWebApi.Models.Doctor", b =>
+                {
+                    b.HasOne("User", "user")
+                        .WithOne("doctor")
+                        .HasForeignKey("SecondWebApi.Models.Doctor", "Email")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_User_Doctor");
+
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("SecondWebApi.Models.DoctorSpeciality", b =>
                 {
                     b.HasOne("SecondWebApi.Models.Doctor", "Doctor")
@@ -210,16 +250,16 @@ namespace SecondWebApi.Migrations
                     b.Navigation("Speciality");
                 });
 
-            modelBuilder.Entity("SecondWebApi.Models.User", b =>
+            modelBuilder.Entity("SecondWebApi.Models.Patient", b =>
                 {
-                    b.HasOne("SecondWebApi.Models.User", "UserFollower")
-                        .WithMany("Followers")
-                        .HasForeignKey("FollwerId")
+                    b.HasOne("User", "user")
+                        .WithOne("patient")
+                        .HasForeignKey("SecondWebApi.Models.Patient", "Email")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired()
-                        .HasConstraintName("FK_Followers");
+                        .HasConstraintName("FK_User_Patient");
 
-                    b.Navigation("UserFollower");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("SecondWebApi.Models.Doctor", b =>
@@ -239,9 +279,11 @@ namespace SecondWebApi.Migrations
                     b.Navigation("DoctorSpecialities");
                 });
 
-            modelBuilder.Entity("SecondWebApi.Models.User", b =>
+            modelBuilder.Entity("User", b =>
                 {
-                    b.Navigation("Followers");
+                    b.Navigation("doctor");
+
+                    b.Navigation("patient");
                 });
 #pragma warning restore 612, 618
         }
