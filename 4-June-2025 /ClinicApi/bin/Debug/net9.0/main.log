@@ -1,0 +1,173 @@
+2025-06-04 12:37:14,012 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 12:37:14,041 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 12:37:14,042 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 12:37:14,042 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 12:40:36,386 [3] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+WHERE u.username = @__key_0
+LIMIT 2
+2025-06-04 12:40:36,412 [3] FATAL AuthenticationService - User not Found
+2025-06-04 12:40:36,413 [3] ERROR SecondWebApi.Controllers.AuthenticationController - No such user
+2025-06-04 12:43:20,941 [21] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 12:44:58,587 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 12:44:58,618 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 12:44:58,618 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 12:44:58,618 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 13:00:54,421 [11] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:01:04,159 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:01:04,194 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:01:04,195 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:01:04,195 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 13:05:17,179 [17] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:05:27,509 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:05:27,540 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:05:27,541 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:05:27,541 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 13:09:20,148 [3] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (53ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+WHERE u.username = @__key_0
+LIMIT 2
+2025-06-04 13:09:20,168 [3] FATAL AuthenticationService - User not Found
+2025-06-04 13:11:57,630 [25] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:12:08,431 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:12:08,462 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:12:08,463 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:12:08,463 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 13:13:23,547 [17] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 14:28:07,176 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 14:28:07,208 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 14:28:07,208 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 14:28:07,208 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 14:55:44,710 [34] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 14:57:33,948 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 14:57:33,980 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 14:57:33,980 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 14:57:33,980 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 14:57:53,640 [12] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 14:58:59,432 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 14:58:59,465 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 14:58:59,465 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 14:58:59,465 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:00:49,192 [19] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:00:54,692 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:00:54,721 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:00:54,722 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:00:54,722 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:12:42,472 [33] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:12:47,856 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:12:47,885 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:12:47,885 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:12:47,885 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:13:14,451 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:13:14,455 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:13:16,412 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 1939.9127ms - 200
+2025-06-04 15:13:16,412 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 1967.5447ms - 200
+2025-06-04 15:13:16,434 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:13:16,434 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:13:16,515 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 81.4347ms - 200
+2025-06-04 15:13:16,516 [10] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 81.9375ms - 200
+2025-06-04 15:23:12,563 [23] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:23:23,016 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:23:23,046 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:23:23,047 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:23:23,047 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:29:06,367 [26] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:29:15,147 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:29:15,177 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:29:15,178 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:29:15,178 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:29:39,647 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:29:39,651 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:29:40,103 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 433.1814ms - 200
+2025-06-04 15:29:40,103 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 462.4566ms - 200
+2025-06-04 15:29:40,124 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:29:40,124 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:29:40,207 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 82.7087ms - 200
+2025-06-04 15:29:40,207 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 83.2033ms - 200
+2025-06-04 15:29:41,270 [7] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 15:29:41,453 [10] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@p0='?', @p1='?' (DbType = Binary), @p2='?' (DbType = Binary), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO users (username, "HashKey", password, role)
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-04 15:35:55,878 [21] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:36:04,581 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:36:04,617 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:36:04,617 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:36:04,617 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 15:36:33,744 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:36:33,747 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:36:34,173 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 408.4793ms - 200
+2025-06-04 15:36:34,174 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 435.7205ms - 200
+2025-06-04 15:36:34,198 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:36:34,198 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:36:34,269 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 71.669ms - 200
+2025-06-04 15:36:34,270 [7] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 72.2504ms - 200
+2025-06-04 15:36:35,232 [15] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 15:38:59,616 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:38:59,617 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:00,068 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 451.2116ms - 200
+2025-06-04 15:39:00,068 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 452.9516ms - 200
+2025-06-04 15:39:00,070 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:00,070 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:00,147 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 76.8616ms - 200
+2025-06-04 15:39:00,166 [35] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 96.2311ms - 200
+2025-06-04 15:39:00,191 [37] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 15:39:30,758 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:30,758 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:30,850 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 91.8041ms - 400
+2025-06-04 15:39:30,850 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 92.2006ms - 400
+2025-06-04 15:39:32,000 [38] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:32,001 [38] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:32,083 [38] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 82.3812ms - 400
+2025-06-04 15:39:32,083 [38] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 82.9587ms - 400
+2025-06-04 15:39:35,985 [39] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:35,985 [39] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:36,098 [39] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 113.3001ms - 200
+2025-06-04 15:39:36,099 [39] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 113.6694ms - 200
+2025-06-04 15:39:36,102 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:36,102 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:36,176 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 72.975ms - 200
+2025-06-04 15:39:36,176 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 73.5335ms - 200
+2025-06-04 15:39:36,240 [39] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 15:39:42,983 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:42,983 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 15:39:43,122 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 138.6827ms - 200
+2025-06-04 15:39:43,122 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 139.17ms - 200
+2025-06-04 15:39:43,124 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:43,125 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 15:39:43,204 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 79.397ms - 200
+2025-06-04 15:39:43,204 [37] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 79.8744ms - 200
+2025-06-04 15:39:43,206 [37] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 17:05:24,649 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 17:05:24,653 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 17:05:25,036 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 379.3829ms - 200
+2025-06-04 17:05:25,036 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 389.7437ms - 200
+2025-06-04 17:05:25,039 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 17:05:25,039 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 17:05:25,108 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 68.6112ms - 200
+2025-06-04 17:05:25,108 [52] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 68.9447ms - 200
+2025-06-04 17:05:25,213 [53] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+2025-06-04 17:05:36,763 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 17:05:36,764 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request POST https://oauth2.googleapis.com/token
+2025-06-04 17:05:36,862 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 98.2667ms - 200
+2025-06-04 17:05:36,862 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 99.2136ms - 200
+2025-06-04 17:05:36,865 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - Start processing HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 17:05:36,865 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Sending HTTP request GET https://oauth2.googleapis.com/tokeninfo?*
+2025-06-04 17:05:36,931 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.ClientHandler - Received HTTP response headers after 66.1022ms - 200
+2025-06-04 17:05:36,931 [53] INFO System.Net.Http.HttpClient.IGoogleOAuthService.LogicalHandler - End processing HTTP request after 66.5581ms - 200
+2025-06-04 17:05:36,933 [53] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u

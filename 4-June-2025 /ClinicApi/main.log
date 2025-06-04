@@ -1,0 +1,12 @@
+2025-06-04 12:43:27,469 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 12:43:27,500 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 12:43:27,501 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 12:43:27,501 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Presidio-Tasks/3-June-2025/ClinicApi
+2025-06-04 12:43:36,187 [11] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u.username, u."HashKey", u.password, u.role
+FROM users AS u
+WHERE u.username = @__key_0
+LIMIT 2
+2025-06-04 12:43:36,204 [11] FATAL AuthenticationService - User not Found
+2025-06-04 12:43:36,205 [11] ERROR SecondWebApi.Controllers.AuthenticationController - No such user
+2025-06-04 12:44:54,335 [16] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
