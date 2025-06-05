@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Files Uploaded Data</h1>
+    <div id="msgs">
+       
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@8.0.7/dist/browser/signalr.min.js"></script>
+    <script>
+         const connection = new signalR.HubConnectionBuilder()
+                                .withUrl("http://localhost:5042/notificationhub",{
+                                    withCredentials:true
+                                })
+                                .withAutomaticReconnect()
+                                .build();
+         connection.on("ReceiveMessage",(user,message)=>{
+            console.log(`${user} uploaded the file ${message}`)
+            const div = document.getElementById("msgs");
+            const p = document.createElement("p");
+            p.innerText= `${user} uploaded the file ${message}`;
+            div.append(p);
+         })
+         connection.start().then(()=>{
+                connection.invoke("SendMessage","Connected","Successfully connected to SignalR Hub");
+            })
+            .catch(err=>{
+                console.log("sinalR connection Failed")
+            })
+
+    </script>
+</body>
+</html>
