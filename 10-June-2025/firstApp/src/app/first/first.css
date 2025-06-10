@@ -1,0 +1,95 @@
+/* Container styling */
+.customer-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.customer-form-container h1,
+.customer-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label + input layout */
+.customer-form-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.customer-form-container input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Preview list */
+.customer-preview {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.customer-preview li {
+  padding: 6px 0;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+/* Like/Dislike section */
+.reactions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.reactions .btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.reactions i {
+  font-size: 22px;
+}
+
+/* Like/Dislike count styles */
+.reactions span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-primary{
+    margin-top: auto;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}

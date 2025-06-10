@@ -1,0 +1,37 @@
+<div class="customer-form-container">
+  <h1>Add Customer</h1>
+  <label>Name: <input type="text" [(ngModel)]="name" /></label>
+  <label>Address: <input type="text" [(ngModel)]="address" /></label>
+  <label>Email: <input type="email" [(ngModel)]="email" /></label>
+  <label>Age: <input type="number" [(ngModel)]="age" /></label>
+  <label>Phone No: <input type="text" [(ngModel)]="phoneno" /></label>
+
+  <button (click)="addCustomer()" class="btn-primary">Add Customer</button>
+
+  <hr>
+
+  <h2>Customer List</h2>
+  <div *ngFor="let customer of customers" class="customer-preview">
+    <ul>
+      <li><strong>Name:</strong> {{ customer.name }}</li>
+      <li><strong>Address:</strong> {{ customer.address }}</li>
+      <li><strong>Email:</strong> {{ customer.email }}</li>
+      <li><strong>Age:</strong> {{ customer.age }}</li>
+      <li><strong>Phone No:</strong> {{ customer.phoneno }}</li>
+    </ul>
+
+    <div class="reactions">
+      <button (click)="like(customer)" aria-label="Like" class="btn btn-link p-0">
+        <i class="bi" [ngClass]="customer.liked ? 'bi-hand-thumbs-up-fill text-primary' : 'bi-hand-thumbs-up'"></i>
+      </button>
+      <span>{{ customer.likeCount }}</span>
+      <span>|</span>
+      <span>{{ customer.dislikeCount }}</span>
+      <button (click)="dislike(customer)" aria-label="Dislike" class="btn btn-link p-0">
+        <i class="bi" [ngClass]="customer.disliked ? 'bi-hand-thumbs-down-fill text-danger' : 'bi-hand-thumbs-down'"></i>
+      </button>
+    </div>
+
+    <hr />
+  </div>
+</div>
