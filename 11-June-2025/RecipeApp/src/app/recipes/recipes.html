@@ -1,0 +1,16 @@
+
+
+@if(recipes().length > 0) {
+<div class="recipe-list">
+  @for (recipe of recipes(); track recipe.id) {
+  <app-recipe [recipe]="recipe"></app-recipe>
+  }
+</div>
+} @else {
+    <div class="empty">
+        <div class="text-content">
+            <h2>No Recipes Found</h2>
+        </div>
+
+    </div>
+}
