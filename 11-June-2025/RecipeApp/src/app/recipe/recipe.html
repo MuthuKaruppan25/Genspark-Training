@@ -1,0 +1,43 @@
+@if (recipe) {
+  <div class="recipe-card">
+    <div class="recipe-header">
+      <img [src]="recipe.image" [alt]="recipe.name" class="recipe-image" />
+
+    </div>
+          <div class="recipe-title-bar">
+        <h2 class="recipe-name">{{ recipe.name }}</h2>
+        <span class="difficulty">{{ recipe.difficulty }}</span>
+      </div>
+
+    <div class="recipe-details">
+      <p><strong>Cuisine:</strong> {{ recipe.cuisine }}</p>
+      <p><strong>Prep:</strong> {{ recipe.prepTimeMinutes }} mins | 
+         <strong>Cook:</strong> {{ recipe.cookTimeMinutes }} mins</p>
+      <p><strong>Servings:</strong> {{ recipe.servings }}</p>
+
+      <div class="ingredients">
+        <strong>Ingredients:</strong>
+        <div class="tag-container">
+          @for (ingredient of recipe.ingredients; track ingredient) {
+            <span class="tag">{{ ingredient }}</span>
+          }
+        </div>
+      </div>
+
+      @if (recipe.instructions.length > 0) {
+        <details class="instructions">
+          <summary class="instructions-toggle"> View Instructions</summary>
+          <ol>
+            @for (step of recipe.instructions; track step) {
+              <li>{{ step }}</li>
+            }
+          </ol>
+        </details>
+      } @else {
+        <p>No instructions available.</p>
+      }
+    </div>
+  </div>
+} @else {
+  <p>No recipe provided.</p>
+}
