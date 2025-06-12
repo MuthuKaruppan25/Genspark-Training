@@ -1,0 +1,174 @@
+/* ===== Global ===== */
+:root {
+  --bg: #f0f4f8;
+  --card-bg: #ffffff;
+  --text: #1a1f29;
+  --subtext: #57606a;
+  --accent: #454da2;
+  --shadow-light: rgba(255,255,255,0.8);
+  --shadow-dark: rgba(0,0,0,0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 680px;
+  width: 100%;
+  box-shadow:
+    8px 8px 20px var(--shadow-dark),
+    -8px -8px 20px var(--shadow-light);
+  position: relative;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+
+/* ===== Button Group ===== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-group button,
+.clear {
+  background: var(--card-bg);
+  color: var(--accent);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    4px 4px 10px var(--shadow-dark),
+    -4px -4px 10px var(--shadow-light);
+  transition: all 0.2s ease;
+}
+
+.button-group button:hover,
+.clear:hover {
+  color: #fff;
+  background: var(--accent);
+  box-shadow:
+    inset 4px 4px 10px var(--shadow-dark),
+    inset -4px -4px 10px var(--shadow-light);
+  transform: translateY(-2px);
+}
+
+/* ===== Loader ===== */
+.loader {
+  width: 56px;
+  height: 56px;
+  border: 6px solid var(--card-bg);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto;
+}
+
+.hidden { display: none; }
+
+/* ===== Output List ===== */
+.user-list {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-height: 380px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s;
+}
+
+.user-list.faded { opacity: 0.4; }
+
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text);
+
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--card-bg);
+  border-radius: 14px;
+
+  transition: transform 0.2s;
+}
+
+.user:hover {
+  transform: translateX(4px);
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info span {
+  font-size: 0.95rem;
+  color: var(--subtext);
+}
+
+.info .company {
+  font-style: italic;
+}
+
+/* ===== Clear Button ===== */
+.button-clear {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* ===== Spinner Keyframes ===== */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
