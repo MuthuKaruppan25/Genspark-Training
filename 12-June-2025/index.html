@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Examples</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <h2>Fetch Users</h2>
+
+      <div class="button-group">
+        <button onclick="fetchByPromise()">Promise</button>
+        <button onclick="fetchWithCallback(fetchByPromise)">Callback</button>
+        <button onclick="fetchByAwait()">Async/Await</button>
+      </div>
+
+      <!-- Loader -->
+      <div id="loader" class="loader hidden"></div>
+
+      <div id="output" class="user-list">Click a button to load users</div>
+
+      <div class="button-clear">
+        <button onclick="clearOutput()" class="clear">Clear</button>
+      </div>
+    </div>
+
+    <script>
+      const outputDiv = document.getElementById("output");
+      const loader = document.getElementById("loader");
+
+      function clearOutput() {
+        outputDiv.innerHTML = `<div class="load">Click a button to load users</div>`;
+      }
+
+      function showLoader() {
+        loader.classList.remove("hidden");
+        outputDiv.classList.add("faded");
+      }
+
+      function hideLoader() {
+        loader.classList.add("hidden");
+        outputDiv.classList.remove("faded");
+      }
+
+      function displayUsers(users) {
+        hideLoader();
+        outputDiv.innerHTML = users
+          .map(
+            (u) => `
+        <div class="user">
+          <div class="avatar">${u.name.charAt(0)}</div>
+          <div class="info">
+            <strong>${u.name}</strong>
+            <span>${u.email}</span>
+            <span class="company">${u.company.name}</span>
+          </div>
+        </div>`
+          )
+          .join("");
+      }
+
+      function fetchUsersPromise() {
+        return new Promise((resolve, reject) => {
+          fetch("https://jsonplaceholder.typicode.com/users")
+            .then((res) => {
+              if (!res.ok) {
+                
+                return reject(
+                  new Error(`HTTP ${res.status} - ${res.statusText}`)
+                );
+              }
+              
+              return res.json().then((data) => resolve(data));
+            })
+            .catch((err) => {
+          
+              reject(err);
+            });
+        });
+      }
+
+      function fetchByPromise() {
+        showLoader();
+
+        fetchUsersPromise()
+          .then((users) => {
+            displayUsers(users);
+          })
+          .catch((err) => {
+            outputDiv.innerHTML = `Error: ${err.message}`;
+          })
+          .finally(() => {
+            hideLoader();
+          });
+      }
+
+      function fetchWithCallback(fetchByPromise) {
+        showLoader();
+        setTimeout(() => {
+          fetchByPromise();
+        }, 2000);
+      }
+
+      async function fetchByAwait() {
+        showLoader();
+        try {
+          const res = await fetch("https://jsonplaceholder.typicode.com/users");
+          const users = await res.json();
+          displayUsers(users);
+        } catch (err) {
+          hideLoader();
+          outputDiv.innerHTML = `Error: ${err.message}`;
+        }
+      }
+    </script>
+  </body>
+</html>
