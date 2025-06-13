@@ -1,0 +1,211 @@
+2025-06-11 14:41:06,714 [11] INFO  - User logged in: muthu@gmail.com
+2025-06-11 14:41:16,091 [13] INFO  - User logged in: muthu@gmail.com
+2025-06-11 16:03:12,888 [13] INFO  - Skill added: React
+2025-06-11 16:03:29,646 [11] INFO  - Skill added: Python
+2025-06-11 16:03:31,565 [11] WARN  - Duplicate skill attempted: Python
+JobPortal.Exceptions.DuplicateEntryException: Skill already exists.
+   at SkillsService.AddSkill(SkillRegisterDto skillRegisterDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SkillsService.cs:line 28
+2025-06-11 16:07:50,066 [11] ERROR - Industry type error during company registration
+JobPortal.Exceptions.RecordNotFoundException: Industry type 'Information Technology' not found and could not be created.
+   at CompanyService.RegisterCompany(CompanyRegisterDto companyRegisterDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/CompanyService.cs:line 60
+2025-06-11 16:08:09,219 [11] INFO  - Industry type added: Name = Information Technology, Id = 4abb3cf7-62c8-4502-9f62-3475c0db4e52
+2025-06-11 16:08:13,348 [11] INFO  - Company registered: Name = TechNova Solutions, CompanyId = 453db81f-899a-4fe4-bea2-ee2d9903f234
+2025-06-11 16:09:21,063 [7] INFO  - Recruiter registered successfully: Email=muthu@gmail.com, Company=TechNova Solutions
+2025-06-11 16:14:55,137 [12] ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/AuthenticationService.cs:line 33
+2025-06-11 16:15:32,820 [20] INFO  - User logged in: muthu@gmail.com
+2025-06-11 16:18:02,092 [7] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Full Stack Developer
+2025-06-11 16:20:23,847 [14] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Devops Developer
+2025-06-11 16:21:22,389 [20] INFO  - Soft deleted job post: 1236fb01-2b40-4a5d-8c98-e4b8880cdab8, RecruiterId: 930a50ad-d617-4e0f-b630-9bcfc9e04d18
+2025-06-11 16:23:49,983 [21] INFO  - Updated responsibilities for postId: 547f1943-ccf8-4cef-a04e-7407b2e34830
+2025-06-11 17:40:34,988 [13] ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/AuthenticationService.cs:line 36
+2025-06-11 17:40:51,671 [14] INFO  - User logged in: muthu@gmail.com
+2025-06-11 17:54:01,074 [20] INFO  - User logged in: muthu@gmail.com
+2025-06-11 18:39:17,282 [8] INFO  - Seeker registered: Email = gowtham@gmail.com, SeekerId = Gowtham
+2025-06-11 18:41:20,923 [16] INFO  - Seeker registered: Email = muthukaruppan@gmail.com, SeekerId = Muthu
+2025-06-11 18:42:18,365 [3] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 19:43:40,938 [54] INFO  - User logged in: muthu@gmail.com
+2025-06-11 19:46:00,512 [56] ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto)
+2025-06-11 19:46:14,551 [59] ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto)
+2025-06-11 19:46:27,143 [59] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 19:47:09,086 [58] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Java Developer
+2025-06-11 19:49:00,289 [8] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 19:49:00,289 [12] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 19:49:16,312 [13] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Python Developer
+2025-06-11 19:51:28,433 [14] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 19:51:48,337 [16] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Python Developer
+2025-06-11 20:00:36,958 [14] INFO  - User logged in: muthukaruppan@gmail.com
+2025-06-11 20:00:52,479 [13] INFO  - JobPost added by recruiter: 930a50ad-d617-4e0f-b630-9bcfc9e04d18, Job Title: Python Developer
+2025-06-11 20:07:53,182 [19] ERROR - Failed to fetch recruiters for company
+JobPortal.Exceptions.RecordNotFoundException: Company not found.
+   at CompanyService.GetRecruitersInCompany(Guid companyId) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/CompanyService.cs:line 107
+2025-06-11 20:12:36,604 [14] INFO  - Company details updated: Id=453db81f-899a-4fe4-bea2-ee2d9903f234
+2025-06-11 20:19:46,734 [28] INFO  - Skill added: MongoDB
+2025-06-11 20:21:34,186 [21] INFO  - Industry type added: Name = Information Tecnology, Id = bd058e8f-33c0-4286-ab05-669a24f15b56
+2025-06-11 20:34:01,868 [8] INFO  - Skill added: React
+2025-06-11 20:34:09,979 [8] INFO  - Skill added: Python
+2025-06-11 20:34:28,974 [8] INFO  - Skill added: Sql
+2025-06-11 20:34:35,322 [8] INFO  - Skill added: Flutter
+2025-06-11 20:34:54,926 [8] INFO  - Industry type added: Name = Information Tecnology, Id = 30026f86-1a0e-48d1-9155-bf791a13c3ad
+2025-06-11 20:36:13,434 [15] INFO  - Industry type added: Name = Agriculture Technology, Id = 4f6bf7dd-e29a-4f06-9bfc-fd165b182c0a
+2025-06-11 20:38:31,605 [19] ERROR - Industry type error during company registration
+JobPortal.Exceptions.RecordNotFoundException: Industry type 'Information Technology' not found and could not be created.
+   at CompanyService.RegisterCompany(CompanyRegisterDto companyRegisterDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/CompanyService.cs:line 60
+2025-06-11 20:39:52,425 [19] ERROR - Industry type error during company registration
+JobPortal.Exceptions.RecordNotFoundException: Industry type 'Information Technology' not found and could not be created.
+   at CompanyService.RegisterCompany(CompanyRegisterDto companyRegisterDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/CompanyService.cs:line 60
+2025-06-11 20:40:31,474 [19] INFO  - Industry type added: Name = Information Technology, Id = 367e9285-e542-490c-985b-25ea3523b14c
+2025-06-11 20:40:34,514 [19] INFO  - Company registered: Name = TechNova Solutions, CompanyId = ecb659bf-21a9-42e8-8841-12e2d97c276b
+2025-06-11 20:41:40,825 [23] INFO  - Company registered: Name = CodeCrush Technologies Pvt Ltd, CompanyId = 09efbf87-b89b-4c76-8b02-10c7fe801681
+2025-06-11 20:43:00,584 [29] INFO  - Skill added: Tailwind CSS
+2025-06-11 20:43:08,853 [29] INFO  - Skill added: MongoDB
+2025-06-11 20:49:16,723 [35] ERROR - Company or user record not found during registration
+JobPortal.Exceptions.RecordNotFoundException: Company with name 'TechNova Solutions Pvt Ltd' not found.
+   at TransactionalRecruiterRegister.RegisterCompany(RecruiterRegisterDto dto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Misc/TransactionRecruiterRegister.cs:line 54
+   at TransactionalRecruiterRegister.RegisterCompany(RecruiterRegisterDto dto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Misc/TransactionRecruiterRegister.cs:line 73
+   at RecruiterService.RegisterCompany(RecruiterRegisterDto dto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/RecruiterService.cs:line 48
+2025-06-11 20:49:51,322 [39] INFO  - Recruiter registered successfully: Email=muthu@gmail.com, Company=TechNova Solutions
+2025-06-11 20:50:58,691 [44] INFO  - Recruiter registered successfully: Email=mano@gmail.com, Company=CodeCrush Technologies Pvt Ltd
+2025-06-11 20:53:42,547 [44] ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/AuthenticationService.cs:line 35
+2025-06-11 20:54:04,957 [44] INFO  - User logged in: muthu@gmail.com
+2025-06-11 21:02:57,373 [67] INFO  - JobPost added by recruiter: 54026cf8-17a8-4811-b0ae-dbd89b0cb7a1, Job Title: Frontend Developer
+2025-06-11 21:08:03,852 [76] INFO  - JobPost added by recruiter: 54026cf8-17a8-4811-b0ae-dbd89b0cb7a1, Job Title: Full Stack Developer
+2025-06-11 21:11:41,574 [82] INFO  - JobPost added by recruiter: 34a5a981-70c2-43cc-8403-e0208dc1a2fd, Job Title: Backend Developer
+2025-06-11 21:11:58,332 [83] INFO  - Skill added: Node
+2025-06-11 21:17:19,806 [71] INFO  - Seeker registered: Email = gowtham@gmail.com, SeekerId = Gowtham
+2025-06-11 21:20:09,828 [66] INFO  - Seeker registered: Email = dhanush@gmail.com, SeekerId = Dhanush
+2025-06-11 21:20:56,485 [65] INFO  - Seeker registered: Email = surya@gmail.com, SeekerId = Surya
+2025-06-11 21:24:14,274 [58] INFO  - User logged in: gowtham@gmail.com
+2025-06-11 21:32:17,219 [12] INFO  - Resume uploaded: SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:32:17,229 [12] INFO  - Job application created for SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:32:38,193 [20] ERROR - Error creating job application
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/JobApplicantService.cs:line 42
+2025-06-11 21:32:52,513 [12] INFO  - User logged in: dhanush@gmail.com
+2025-06-11 21:33:10,932 [22] INFO  - Resume uploaded: SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:33:10,932 [22] INFO  - Job application created for SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:33:37,254 [22] ERROR - Error creating job application
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/JobApplicantService.cs:line 42
+2025-06-11 21:34:07,941 [29] ERROR - Error creating job application
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/JobApplicantService.cs:line 42
+2025-06-11 21:34:20,392 [28] INFO  - Resume uploaded: SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:34:20,393 [28] INFO  - Job application created for SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:34:32,872 [26] INFO  - Resume uploaded: SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:34:32,873 [26] INFO  - Job application created for SeekerId = 49462f4c-2969-4283-890b-7db6080b65fb, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:34:45,008 [26] INFO  - User logged in: surya@gmail.com
+2025-06-11 21:35:51,335 [26] INFO  - Resume uploaded: SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:35:51,336 [26] INFO  - Job application created for SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:36:02,740 [27] INFO  - Resume uploaded: SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:36:02,740 [27] INFO  - Job application created for SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:36:16,897 [25] INFO  - Resume uploaded: SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:36:16,897 [25] INFO  - Job application created for SeekerId = cfbc523b-d7d9-4580-87c9-382c84121267, JobPostId = e42b6fe5-e7c9-4735-ae0c-6c7c28b0ed0a
+2025-06-11 21:36:27,207 [25] INFO  - User logged in: gowtham@gmail.com
+2025-06-11 21:37:27,723 [16] INFO  - Resume uploaded: SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:37:27,723 [16] INFO  - Job application created for SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = b7e3cce5-a3da-453c-a64b-0508a2c96052
+2025-06-11 21:37:40,953 [17] INFO  - Resume uploaded: SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:37:40,953 [17] INFO  - Job application created for SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 21:54:16,130 [33] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 21:54:56,901 [33] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 21:55:46,362 [35] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:07:28,425 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:08:43,452 [12] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:10:45,349 [3] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:11:37,936 [12] INFO  - User logged in: gowtham@gmail.com
+2025-06-11 22:12:03,508 [22] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:12:05,569 [12] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:12:30,877 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:13:47,630 [16] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:13:48,772 [16] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:15:12,133 [16] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:16:39,381 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:16:44,038 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:16:44,974 [3] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:16:54,110 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:17:01,259 [3] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found
+   at SeekerService.GetSeekerWithApplications(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 111
+2025-06-11 22:17:13,672 [3] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:14,980 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:15,357 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:15,731 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:16,192 [22] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:45,816 [14] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:17:47,902 [22] ERROR - Failed to fetch paged seekers
+JobPortal.Exceptions.RecordNotFoundException: User not found.
+   at SeekerService.GetSeekerByUsername(String username) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 289
+2025-06-11 22:21:00,307 [20] INFO  - User logged in: muthu@gmail.com
+2025-06-11 23:00:36,800 [19] INFO  - User logged in: muthu@gmail.com
+2025-06-11 23:12:12,625 [33] INFO  - Updated job post: 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 23:14:13,522 [36] INFO  - Updated responsibilities for postId: 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 23:15:55,339 [39] INFO  - Updated requirements for postId: 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 23:17:29,927 [45] INFO  - Updated post skills for job post: 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 23:24:08,406 [62] INFO  - Resume downloaded: SeekerId = d93fc57e-f6ae-4a55-a1df-cc13c25c98d8, JobPostId = 6a1c81b3-be06-4f22-9fa9-e65fb3a85ef6
+2025-06-11 23:28:10,789 [74] INFO  - Company locations updated: Id=ecb659bf-21a9-42e8-8841-12e2d97c276b
+2025-06-11 23:31:13,317 [81] INFO  - Company details updated: Id=ecb659bf-21a9-42e8-8841-12e2d97c276b
+2025-06-11 23:45:27,097 [73] ERROR - Failed to update seeker skills
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at SeekerService.UpdateSeekerSkills(String username, List`1 skillNames, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 227
+2025-06-11 23:51:26,866 [60] ERROR - Failed to update seeker skills
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at SeekerService.UpdateSeekerSkills(String username, List`1 skillNames, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 227
+2025-06-11 23:51:27,860 [61] ERROR - Failed to update seeker skills
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at SeekerService.UpdateSeekerSkills(String username, List`1 skillNames, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 227
+2025-06-11 23:53:51,564 [58] ERROR - Failed to update seeker skills
+System.UnauthorizedAccessException: You are not authorized to delete this seeker.
+   at SeekerService.UpdateSeekerSkills(String username, List`1 skillNames, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SeekerService.cs:line 227
