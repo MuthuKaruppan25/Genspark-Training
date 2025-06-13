@@ -1,0 +1,18 @@
+<!-- search.html -->
+<div class="search-box">
+  <input
+    type="text"
+    placeholder="Enter city name"
+    #city
+   
+  />
+  <button (click)="search(city.value)">Search</button>
+    <div class="history" *ngIf="history$ | async as history">
+    <p>Recent Searches:</p>
+    <div class="history-buttons">
+      <button *ngFor="let h of history" (click)="searchFromHistory(h)">
+        {{ h }}
+      </button>
+    </div>
+  </div>
+</div>
