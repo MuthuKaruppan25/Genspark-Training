@@ -1,0 +1,17 @@
+<div class="login-card">
+    <h2>Login</h2>
+    <div class="input">
+        <input type="text" #username  placeholder="Enter Username"/>
+    </div>
+    <div class="input">
+        <input type="password" #password placeholder="Enter password"/>
+    </div>
+    <button (click)="login(username.value,password.value)" >Login</button>
+    @if(errText.length > 0){
+     <p class="errText">{{errText}}</p>
+    }
+   
+</div>
+
+
+<app-display></app-display>
