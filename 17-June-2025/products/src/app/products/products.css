@@ -1,0 +1,88 @@
+.page-title {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 60%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #2980b9;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Spinner Centering */
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+
+.empty,
+.text-content,
+.cart-card,
+.cart-img {
+  display: none;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  padding: 12px 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-color: rgb(41, 41, 41);
+}
+
+.back-to-top:hover {
+  background-color: #9d9d9d;
+}

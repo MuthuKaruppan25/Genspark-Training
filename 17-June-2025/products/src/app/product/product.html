@@ -1,0 +1,30 @@
+@if (product) {
+  <div class="product-card">
+    <div class="product-header">
+      <img
+        [src]="product.thumbnail"
+        [alt]="product.title"
+        class="product-image"
+      />
+    </div>
+
+    <div class="product-content">
+      <div class="product-title-bar">
+        <h2 class="product-name" [innerHTML]="highlightMatch(product.title)">{{ product.title }}</h2>
+        <span class="category">{{ product.category }}</span>
+      </div>
+
+      <div class="desc">
+            <p class="product-description">{{ product.description }}</p>
+      </div>
+      
+
+      <div class="product-info">
+        <span class="price">${{ product.price }}</span>
+        <button class="buy-btn" (click)="handleBuy(product.id)">Buy Now</button>
+      </div>
+    </div>
+  </div>
+} @else {
+  <p class="no-product">No product provided.</p>
+}
