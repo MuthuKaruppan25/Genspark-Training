@@ -1,0 +1,95 @@
+.header
+{
+    display: flex;
+    padding: 16px 60px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    align-items: self-start;
+}
+
+.logo .icon{
+     color: #2196f3;
+     display: block;
+     height: 40px;
+     width: 40px;
+}
+
+.nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width:760px) {
+
+  .header {
+  
+    justify-content: self-start;
+    padding: 16px 20px;
+    gap: 10px;
+  }
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a,
+  .nav .btn {
+    width: 90%;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: self-start;
+    width: 100%;
+  }
+  .logo .icon{
+    height: 30px;
+    width: 30px;
+  }
+
+ .nav{
+    display: none;
+    }
+}

@@ -1,0 +1,36 @@
+<div class="search-bar">
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    (input)="handleSearchProducts()"
+    placeholder="Search for products..."
+  />
+</div>
+
+<hr />
+
+<br />
+
+@if (products().length) {
+<div class="product-list">
+  @for (product of products(); track product.id) {
+  <app-product [product]="product" [searchTerm]="searchText"></app-product>
+  }
+</div>
+@if(showButton){
+
+<button class="back-to-top" (click)="scrolToTop()" aria-label="Back to top">
+  ↑ Top
+</button>
+@if(loading){
+<div class="spinner-wrapper">
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+} } }@else { 
+  <div style="display: flex;justify-content: center;align-items: center;">
+     <h2>No Products Found</h2>
+  </div>
+} 
