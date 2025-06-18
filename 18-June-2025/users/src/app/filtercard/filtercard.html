@@ -1,0 +1,28 @@
+<div class="card filter-container">
+  <div class="filter-group">
+    <label>Gender</label>
+    <select [(ngModel)]="gender" (change)="emitChanges()">
+      <option value="">All</option>
+      <option *ngFor="let g of uniqueGenders" [value]="g">{{ g }}</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label>Role</label>
+    <select [(ngModel)]="role" (change)="emitChanges()">
+      <option value="">All</option>
+      <option *ngFor="let r of uniqueRoles" [value]="r">{{ r }}</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label>State</label>
+    <select [(ngModel)]="state" (change)="emitChanges()">
+      <option value="">All</option>
+      <option *ngFor="let s of uniqueStates" [value]="s">{{ s }}</option>
+    </select>
+  </div>
+ 
+    <button class="filter-button" (click)="resetFilters()">Reset</button>
+  
+</div>

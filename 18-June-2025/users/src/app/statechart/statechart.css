@@ -1,0 +1,26 @@
+.map-wrapper {
+  width: 100%;
+
+}
+
+.map-container {
+  width: 100%;
+  height: 400px; /* increased height */
+  background-color: #ffffff; /* matches dashboard background */
+ max-width: 100%;
+}
+
+.state-container{
+    text-align: center;
+    border: 1px solid rgb(202, 201, 201);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+@media (max-width: 768px) {
+  #mapContainer {
+    height: 300px;
+  }
+}

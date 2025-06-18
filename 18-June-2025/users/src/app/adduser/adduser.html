@@ -1,0 +1,135 @@
+<div class="form-container">
+  <div class="card">
+    <h2>Registration</h2>
+    <form [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+      <div class="form-group">
+        <label>First Name</label>
+        <input
+          formControlName="firstName"
+          type="text"
+          [ngClass]="{'error-border': firstName.touched && firstName.errors}"
+        />
+        @if(firstName.touched && firstName.errors) {
+        @if(firstName.errors['required']) {
+        <span class="error">First Name is required</span>
+        } @else if(firstName.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(firstName.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input
+          formControlName="lastName"
+          type="text"
+          [ngClass]="{'error-border': lastName.touched && lastName.errors}"
+        />
+        @if(lastName.touched && lastName.errors) {
+        @if(lastName.errors['required']){
+        <span class="error">Last Name is required</span>
+        } @else if(lastName.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(lastName.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+        <input formControlName="age" type="number" [ngClass]="{'error-border': age.touched && age.errors}"/>
+        @if(age.touched && age.errors) { @if(age.errors['required']) {
+        <span class="error">Age is required</span>
+        } @else if(age.errors['min']) {
+        <span class="error">Age must be greater than 0</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select
+          formControlName="gender"
+          [ngClass]="{'error-border': gender.touched && gender.errors}"
+        >
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        @if(gender.touched && gender.errors?.['required']) {
+        <span class="error">Gender is required</span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Role</label>
+        <input
+          formControlName="role"
+          type="text"
+          [ngClass]="{'error-border': role.touched && role.errors}"
+        />
+        @if(role.touched && role.errors) { @if(role.errors['required']){
+        <span class="error">Role is required</span>
+        } @else if(role.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(role.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>City</label>
+        <input
+          formControlName="city"
+          type="text"
+          [ngClass]="{'error-border': city.touched && city.errors}"
+        />
+        @if(city.touched && city.errors) { @if(city.errors['required']){
+        <span class="error">City is required</span>
+        } @else if(city.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(city.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>State</label>
+        <input
+          formControlName="state"
+          type="text"
+          [ngClass]="{'error-border': state.touched && state.errors}"
+        />
+        @if(state.touched && state.errors) { @if(state.errors['required']){
+        <span class="error">State is required</span>
+        } @else if(state.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(state.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Country</label>
+        <input
+          formControlName="country"
+          type="text"
+          [ngClass]="{'error-border': country.touched && country.errors}"
+        />
+        @if(country.touched && country.errors) {
+        @if(country.errors['required']){
+        <span class="error">City is required</span>
+        } @else if(country.errors['minlength']) {
+        <span class="error">Minimum 2 characters required</span>
+        } @else if(country.errors['maxlength']) {
+        <span class="error">Maximum 15 characters allowed</span>
+
+        } }
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
