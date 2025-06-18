@@ -1,0 +1,18 @@
+<div class="dashboard">
+    <h2 >Dashboard</h2>
+    <div class="filter-component">
+              <app-filtercard [users]="users" (filtersChanged)="handleFilterChange($event)"></app-filtercard>
+    </div>
+
+  <div class="grid">
+    
+      <app-genderchart [users]="filteredUsers"  ></app-genderchart>
+ 
+    
+      <app-rolechart [users]="filteredUsers"  ></app-rolechart>
+
+    
+      <app-statechart [users]="filteredUsers" style="grid-area: state;"></app-statechart>
+
+  </div>
+</div>

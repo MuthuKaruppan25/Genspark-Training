@@ -1,0 +1,42 @@
+.dashboard {
+
+  width: 100%;
+  padding: 1rem;
+  min-height: 100vh;
+  text-align: center;
+  
+}
+.dashboard h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.filter-component{
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.grid {
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  grid-template-areas:
+    "gender role"
+    "state state";
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "gender"
+      "role"
+      "state"; 
+  }
+  .filter-component{
+    width: 90%;
+  }
+}
