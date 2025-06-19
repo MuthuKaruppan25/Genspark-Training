@@ -1,0 +1,93 @@
+.search-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.no-users{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.searchInput,
+.role-dropdown {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 40%;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.search-input:focus,
+.role-dropdown:focus {
+  border-color: #007bff;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.user-card {
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.user-name {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.role-chip {
+  background-color: #f0f0f0;
+  color: #444;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.loading-indicator {
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+  margin: 1rem;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media (max-width:768px) {
+    .searchInput,
+.role-dropdown{
+    min-width: 90%
+}
+}
