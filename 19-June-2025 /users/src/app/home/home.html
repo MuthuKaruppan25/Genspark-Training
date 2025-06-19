@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="logo">
+
+    <span>Users</span>
+  </div>
+  <div class="hamburger" id="hamburger" (click)="handleTap()">&#9776;</div>
+  <nav class="nav" id="navMenu" [class.show]="class">
+    <a [routerLink]="['/home',]">Home</a>
+       <a [routerLink]="['/home', 'dashboard']">Dashboard</a>
+    <a [routerLink]="['/home','adduser']">Add User</a>
+
+     
+  </nav>
+
+</div>
+  
+
+<router-outlet></router-outlet>

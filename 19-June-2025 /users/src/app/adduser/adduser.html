@@ -1,0 +1,91 @@
+<div class="form-container">
+  <div class="card">
+    <h2>Registration</h2>
+    <form [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+      <div class="form-group">
+        <label>Username</label>
+        <input
+          formControlName="username"
+          type="text"
+          [ngClass]="{ 'error-border': username.touched && username.errors }"
+        />
+        @if (username.touched && username.errors) { @if
+        (username.errors['required']) {
+        <span class="error">Username is required</span>
+        } @if (username.errors['minlength']) {
+        <span class="error">Minimum 3 characters required</span>
+        } @if(username.errors['banned']){
+        <span class="error"
+          >Username cannot include words such as admin or guest</span
+        >
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          formControlName="email"
+          type="email"
+          [ngClass]="{ 'error-border': email.touched && email.errors }"
+        />
+        @if (email.touched && email.errors) { @if (email.errors['required']) {
+        <span class="error">Email is required</span>
+        } @else if (email.errors['email']) {
+        <span class="error">Invalid email address</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input
+          formControlName="password"
+          type="password"
+          [ngClass]="{ 'error-border': password.touched && password.errors }"
+        />
+        @if (password.touched && password.errors) { @if
+        (password.errors['required']) {
+        <span class="error">Password is required</span>
+        } @else if(password.errors['strength']){
+        <span class="error"
+          >Password must be at least 6 characters and include a number and a
+          symbol</span
+        >
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input
+          formControlName="confirmPassword"
+          type="password"
+          [ngClass]="{ 'error-border': confirmPassword.touched && confirmPassword.errors }"
+        />
+        @if (confirmPassword.touched ) { @if (userForm.errors?.['mismatch'] &&
+        (password.touched || confirmPassword.touched)) {
+        <span class="error">Passwords do not match</span>
+        } }
+      </div>
+
+      <div class="form-group">
+        <label>Role</label>
+        <select
+          formControlName="role"
+          [ngClass]="{ 'error-border': role.touched && role.errors }"
+        >
+          <option value="">Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+          <option value="guest">Guest</option>
+        </select>
+        @if (role.touched && role.errors) { @if (role.errors['required']) {
+        <span class="error">Role is required</span>
+        } }
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  @if(showToast){
+  <app-snackbar [message]="toastMessage" [color]="color"></app-snackbar>
+  }
+</div>

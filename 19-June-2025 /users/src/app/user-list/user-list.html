@@ -1,0 +1,35 @@
+<div class="search-filter-container">
+  <input
+    #searchInput
+    type="text"
+    class="searchInput"
+    placeholder="Search by username"
+  />
+
+  <select #roleSelect class="role-dropdown">
+    <option value="">All Roles</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+    <option value="guest">Guest</option>
+  </select>
+</div>
+
+<hr />
+
+<div *ngIf="(loading$ | async)" class="loading-indicator">Loading users...</div>
+<div *ngIf="(error$ | async) as error" class="error-message">{{ error }}</div>
+<div *ngIf="(filteredUsers$ | async)?.length === 0" class="no-users">
+  No users found
+</div>
+<div class="user-grid">
+  <div *ngFor="let user of (filteredUsers$ | async)" class="user-card">
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="{{ user.username }}"
+      class="user-avatar"
+    />
+    <h3 class="user-name">{{ user.username }}</h3>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Role:</strong> <span class="role-chip">{{ user.role }}</span></p>
+  </div>
+</div>
