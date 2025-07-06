@@ -1,0 +1,31 @@
+presidio@Presidios-MacBook-Pro DockerTasks % docker service create \
+  --name webapp \
+  --replicas 3 \
+  --update-delay 10s \
+  httpd
+
+rwswcs8ovklwsf992rxwx4r0z
+overall progress: 3 out of 3 tasks 
+1/3: running   [==================================================>] 
+2/3: running   [==================================================>] 
+3/3: running   [==================================================>] 
+verify: Service rwswcs8ovklwsf992rxwx4r0z converged 
+presidio@Presidios-MacBook-Pro DockerTasks % docker service update \
+  --image httpd:alpine \
+  webapp
+
+webapp
+overall progress: 3 out of 3 tasks 
+1/3: running   [==================================================>] 
+2/3: running   [==================================================>] 
+3/3: running   [==================================================>] 
+verify: Service webapp converged 
+presidio@Presidios-MacBook-Pro DockerTasks % docker service ps webapp
+
+ID             NAME           IMAGE          NODE             DESIRED STATE   CURRENT STATE             ERROR     PORTS
+2rkdhuwocpt1   webapp.1       httpd:alpine   docker-desktop   Running         Running 29 seconds ago              
+xq6y2l4c6tnq    \_ webapp.1   httpd:latest   docker-desktop   Shutdown        Shutdown 29 seconds ago             
+ofc8ify44dts   webapp.2       httpd:alpine   docker-desktop   Running         Running 16 seconds ago              
+7l0ruj3870wn    \_ webapp.2   httpd:latest   docker-desktop   Shutdown        Shutdown 16 seconds ago             
+o5b86s0cbyua   webapp.3       httpd:alpine   docker-desktop   Running         Running 41 seconds ago              
+n6138hhl5lr4    \_ webapp.3   httpd:latest   docker-desktop   Shutdown        Shutdown 48 seconds ago 

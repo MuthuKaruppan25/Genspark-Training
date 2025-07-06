@@ -1,0 +1,17 @@
+presidio@Presidios-MacBook-Pro DockerTasks % docker service create \
+  --name=viz \
+  --publish=8081:8080 \
+  --constraint=node.role==manager \
+  --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+  dockersamples/visualizer
+
+0xgaf3wq7m43uh6nuzp1mrxbx
+overall progress: 1 out of 1 tasks 
+1/1: running   [==================================================>] 
+verify: Service 0xgaf3wq7m43uh6nuzp1mrxbx converged 
+
+presidio@Presidios-MacBook-Pro DockerTasks % docker service ls 
+ID             NAME        MODE         REPLICAS   IMAGE                             PORTS
+z2buw9gfmdir   nginx-web   replicated   0/0        nginx:alpine                      *:8080->80/tcp
+0xgaf3wq7m43   viz         replicated   1/1        dockersamples/visualizer:latest   *:8081->8080/tcp
+rwswcs8ovklw   webapp      replicated   3/3        httpd:alpine     
