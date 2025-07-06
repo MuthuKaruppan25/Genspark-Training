@@ -1,0 +1,42 @@
+presidio@Presidios-MacBook-Pro Task-7 % docker swarm init
+
+Swarm initialized: current node (cexq3s68g93r2z2jkzs9islph) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-482gmet2v4zdvjhpn4u0bbanl7hmk7prura5fjwo1hkp09bjbr-209l0s9zojdko4cycullibr4m 192.168.65.3:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+presidio@Presidios-MacBook-Pro Task-7 % docker service create \
+  --name nginx-web \
+  --publish 8080:80 \
+  --replicas 3 \
+  nginx:latest
+
+z2buw9gfmdir1s78t88r69yuw
+overall progress: 3 out of 3 tasks 
+1/3: running   [==================================================>] 
+2/3: running   [==================================================>] 
+3/3: running   [==================================================>] 
+verify: Service z2buw9gfmdir1s78t88r69yuw converged 
+presidio@Presidios-MacBook-Pro Task-7 % docker service ls
+
+ID             NAME        MODE         REPLICAS   IMAGE          PORTS
+z2buw9gfmdir   nginx-web   replicated   3/3        nginx:latest   *:8080->80/tcp
+presidio@Presidios-MacBook-Pro Task-7 % docker service update --image nginx:alpine nginx-web
+
+nginx-web
+overall progress: 3 out of 3 tasks 
+1/3: running   [==================================================>] 
+2/3: running   [==================================================>] 
+3/3: running   [==================================================>] 
+verify: Service nginx-web converged 
+presidio@Presidios-MacBook-Pro Task-7 % docker service ps nginx-web
+
+ID             NAME              IMAGE          NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+p2zckt7i7ydp   nginx-web.1       nginx:alpine   docker-desktop   Running         Running 4 minutes ago              
+v6ctm7yit91k    \_ nginx-web.1   nginx:latest   docker-desktop   Shutdown        Shutdown 4 minutes ago             
+1gqz01bds4hj   nginx-web.2       nginx:alpine   docker-desktop   Running         Running 4 minutes ago              
+ot25t1opd8bz    \_ nginx-web.2   nginx:latest   docker-desktop   Shutdown        Shutdown 4 minutes ago             
+3kuzchd22be5   nginx-web.3       nginx:alpine   docker-desktop   Running         Running 4 minutes ago              
+vuco7j61i57o    \_ nginx-web.3   nginx:latest   docker-desktop   Shutdown        Shutdown 4 minutes ago             

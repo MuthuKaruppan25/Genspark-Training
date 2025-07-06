@@ -1,0 +1,64 @@
+presidio@Presidios-MacBook-Pro Task-6 % docker service create \
+  --name nginx-web \
+  --publish 8080:80 \
+  --replicas 3 \
+  nginx:latest
+
+ev5172h2frbssbcuscw9b8g3c
+overall progress: 3 out of 3 tasks 
+1/3: running   [==================================================>] 
+2/3: running   [==================================================>] 
+3/3: running   [==================================================>] 
+verify: Service ev5172h2frbssbcuscw9b8g3c converged 
+presidio@Presidios-MacBook-Pro Task-6 % docker services
+docker: unknown command: docker services
+
+Run 'docker --help' for more information
+presidio@Presidios-MacBook-Pro Task-6 % docker service ls
+ID             NAME        MODE         REPLICAS   IMAGE          PORTS
+ev5172h2frbs   nginx-web   replicated   3/3        nginx:latest   *:8080->80/tcp
+presidio@Presidios-MacBook-Pro Task-6 % docker service ps nginx-web
+
+ID             NAME          IMAGE          NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+s3ojl4ih3xiv   nginx-web.1   nginx:latest   docker-desktop   Running         Running 22 seconds ago             
+k1hxhm0wbuiv   nginx-web.2   nginx:latest   docker-desktop   Running         Running 22 seconds ago             
+flnvvjg6os37   nginx-web.3   nginx:latest   docker-desktop   Running         Running 22 seconds ago             
+presidio@Presidios-MacBook-Pro Task-6 % curl localhost:8080
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+presidio@Presidios-MacBook-Pro Task-6 % docker stop nginx-web
+Error response from daemon: No such container: nginx-web
+presidio@Presidios-MacBook-Pro Task-6 % docker service stop nginx-web
+docker: unknown command: docker service stop
+
+Usage:  docker service
+
+Run 'docker service --help' for more information
+presidio@Presidios-MacBook-Pro Task-6 % docker service rm nginx-web
+
+nginx-web
+presidio@Presidios-MacBook-Pro Task-6 % docker swarm leave --force
+Node left the swarm.
+

@@ -1,0 +1,15 @@
+docker network create myweb-net
+
+
+docker run -d \
+  --name backendapinetwork \
+  --network myweb-net \
+  -p 8000:8000 \
+  backendapi
+
+
+docker run -d \
+  --name frontendapp \
+  --network myweb-net \
+  -p 3000:80 \
+  frontendapp
