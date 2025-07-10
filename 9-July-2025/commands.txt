@@ -1,0 +1,146 @@
+presidio@Presidios-MacBook-Pro linux-vm % az deployment group create --resource-group az-ai-training-rg --template-file azure-templates.json --parameters @azure-parameters.json
+
+
+{
+  "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Resources/deployments/azure-templates",
+  "location": null,
+  "name": "azure-templates",
+  "properties": {
+    "correlationId": "17cc37e5-4777-4df6-a606-e95dcaf3c542",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025",
+            "resourceGroup": "az-ai-training-rg",
+            "resourceName": "MuthuServer2025",
+            "resourceType": "Microsoft.Sql/servers"
+          }
+        ],
+        "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025/databases/MuthuDB",
+        "resourceGroup": "az-ai-training-rg",
+        "resourceName": "MuthuServer2025/MuthuDB",
+        "resourceType": "Microsoft.Sql/servers/databases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025",
+            "resourceGroup": "az-ai-training-rg",
+            "resourceName": "MuthuServer2025",
+            "resourceType": "Microsoft.Sql/servers"
+          }
+        ],
+        "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025/firewallRules/AllowAzureServices",
+        "resourceGroup": "az-ai-training-rg",
+        "resourceName": "MuthuServer2025/AllowAzureServices",
+        "resourceType": "Microsoft.Sql/servers/firewallRules"
+      }
+    ],
+    "diagnostics": null,
+    "duration": "PT4M14.7256664S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025",
+        "resourceGroup": "az-ai-training-rg"
+      },
+      {
+        "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025/databases/MuthuDB",
+        "resourceGroup": "az-ai-training-rg"
+      },
+      {
+        "id": "/subscriptions/fff309a9-2887-407d-b64d-e074e3d92e5b/resourceGroups/az-ai-training-rg/providers/Microsoft.Sql/servers/MuthuServer2025/firewallRules/AllowAzureServices",
+        "resourceGroup": "az-ai-training-rg"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "administratorLogin": {
+        "type": "String",
+        "value": "sqladminuser"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "databaseName": {
+        "type": "String",
+        "value": "MuthuDB"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "serverName": {
+        "type": "String",
+        "value": "MuthuServer2025"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Sql",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers/databases",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "servers/firewallRules",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "16501583447376637163",
+    "templateLink": null,
+    "timestamp": "2025-07-09T09:51:37.364743+00:00",
+    "validatedResources": null,
+    "validationLevel": null
+  },
+  "resourceGroup": "az-ai-training-rg",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
