@@ -1,0 +1,9 @@
+2025-06-26 11:57:22,691 ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 35
+2025-06-26 17:35:22,697 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 240
+2025-06-26 17:35:25,592 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 240

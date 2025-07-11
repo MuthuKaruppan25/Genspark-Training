@@ -1,0 +1,9 @@
+2025-07-07 09:44:57,283 ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 35
+2025-07-07 15:43:30,795 ERROR - Field required exception during AddJobPost
+JobPortal.Exceptions.FieldRequiredException: Last date must be at least 2 days from now.
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 59
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 123
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 124
+   at JobPostService.AddJobPost(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/JobPostService.cs:line 72

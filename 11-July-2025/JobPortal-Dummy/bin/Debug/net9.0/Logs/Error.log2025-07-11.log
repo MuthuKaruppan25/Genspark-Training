@@ -1,0 +1,148 @@
+2025-07-11 11:23:05,334 ERROR - Failed to upload resume due to unexpected error
+Azure.RequestFailedException: This request is not authorized to perform this operation using this permission.
+RequestId:78173c91-401e-0087-6928-f23085000000
+Time:2025-07-11T05:52:58.7683775Z
+Status: 403 (This request is not authorized to perform this operation using this permission.)
+ErrorCode: AuthorizationPermissionMismatch
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:78173c91-401e-0087-6928-f23085000000
+Time:2025-07-11T05:52:58.7683775Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 78173c91-401e-0087-6928-f23085000000
+x-ms-client-request-id: 9c4a9b94-4bf4-48d2-b57d-1f4a5185e1d8
+x-ms-version: 2025-05-05
+x-ms-error-code: AuthorizationPermissionMismatch
+Date: Fri, 11 Jul 2025 05:52:58 GMT
+Content-Length: 279
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlockBlobRestClient.UploadAsync(Int64 contentLength, Stream body, Nullable`1 timeout, Byte[] transactionalContentMD5, String blobContentType, String blobContentEncoding, String blobContentLanguage, Byte[] blobContentMD5, String blobCacheControl, IDictionary`2 metadata, String leaseId, String blobContentDisposition, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, String encryptionScope, Nullable`1 tier, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, String blobTagsString, Nullable`1 immutabilityPolicyExpiry, Nullable`1 immutabilityPolicyMode, Nullable`1 legalHold, Byte[] transactionalContentCrc64, String structuredBodyType, Nullable`1 structuredContentLength, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadInternal(Stream content, BlobHttpHeaders blobHttpHeaders, IDictionary`2 metadata, IDictionary`2 tags, BlobRequestConditions conditions, Nullable`1 accessTier, BlobImmutabilityPolicy immutabilityPolicy, Nullable`1 legalHold, IProgress`1 progressHandler, UploadTransferValidationOptions transferValidationOverride, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlockBlobClient.<>c__DisplayClass65_0.<<GetPartitionedUploaderBehaviors>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Azure.Storage.PartitionedUploader`2.UploadInternal(Stream content, Nullable`1 expectedContentLength, TServiceSpecificData args, IProgress`1 progressHandler, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.BlobClient.StagedUploadInternal(Stream content, BlobUploadOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.BlobClient.UploadAsync(Stream content, BlobUploadOptions options, CancellationToken cancellationToken)
+   at BlobService.UploadFileAsync(Stream fileStream, String fileName, String contentType) in /Users/presidio/Desktop/JobPortal-Dummy/Services/BlobService.cs:line 20
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 44
+2025-07-11 11:23:05,359 ERROR - Error creating job application
+JobPortal.Exceptions.UploadException: Failed to upload resume.
+ ---> Azure.RequestFailedException: This request is not authorized to perform this operation using this permission.
+RequestId:78173c91-401e-0087-6928-f23085000000
+Time:2025-07-11T05:52:58.7683775Z
+Status: 403 (This request is not authorized to perform this operation using this permission.)
+ErrorCode: AuthorizationPermissionMismatch
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:78173c91-401e-0087-6928-f23085000000
+Time:2025-07-11T05:52:58.7683775Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 78173c91-401e-0087-6928-f23085000000
+x-ms-client-request-id: 9c4a9b94-4bf4-48d2-b57d-1f4a5185e1d8
+x-ms-version: 2025-05-05
+x-ms-error-code: AuthorizationPermissionMismatch
+Date: Fri, 11 Jul 2025 05:52:58 GMT
+Content-Length: 279
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlockBlobRestClient.UploadAsync(Int64 contentLength, Stream body, Nullable`1 timeout, Byte[] transactionalContentMD5, String blobContentType, String blobContentEncoding, String blobContentLanguage, Byte[] blobContentMD5, String blobCacheControl, IDictionary`2 metadata, String leaseId, String blobContentDisposition, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, String encryptionScope, Nullable`1 tier, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, String blobTagsString, Nullable`1 immutabilityPolicyExpiry, Nullable`1 immutabilityPolicyMode, Nullable`1 legalHold, Byte[] transactionalContentCrc64, String structuredBodyType, Nullable`1 structuredContentLength, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadInternal(Stream content, BlobHttpHeaders blobHttpHeaders, IDictionary`2 metadata, IDictionary`2 tags, BlobRequestConditions conditions, Nullable`1 accessTier, BlobImmutabilityPolicy immutabilityPolicy, Nullable`1 legalHold, IProgress`1 progressHandler, UploadTransferValidationOptions transferValidationOverride, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlockBlobClient.<>c__DisplayClass65_0.<<GetPartitionedUploaderBehaviors>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Azure.Storage.PartitionedUploader`2.UploadInternal(Stream content, Nullable`1 expectedContentLength, TServiceSpecificData args, IProgress`1 progressHandler, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.BlobClient.StagedUploadInternal(Stream content, BlobUploadOptions options, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.BlobClient.UploadAsync(Stream content, BlobUploadOptions options, CancellationToken cancellationToken)
+   at BlobService.UploadFileAsync(Stream fileStream, String fileName, String contentType) in /Users/presidio/Desktop/JobPortal-Dummy/Services/BlobService.cs:line 20
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 44
+   --- End of inner exception stack trace ---
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 85
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/JobPortal-Dummy/Services/JobApplicantService.cs:line 74
+2025-07-11 11:25:09,880 ERROR - Duplicate job application attempt
+JobPortal.Exceptions.DuplicateEntryException: You have already applied for this job.
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/JobPortal-Dummy/Services/JobApplicantService.cs:line 64
+2025-07-11 11:27:09,856 ERROR - Failed to upload resume due to unexpected error
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Url" of relation "fileModels" does not exist
+
+POSITION: 108
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Url" of relation "fileModels" does not exist
+    Position: 108
+    File: parse_target.c
+    Line: 1080
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at JobPortal.Repositories.Repository`2.Add(T item) in /Users/presidio/Desktop/JobPortal-Dummy/Repositories/Repository.cs:line 18
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 56
+2025-07-11 11:27:09,860 ERROR - Error creating job application
+JobPortal.Exceptions.UploadException: Failed to upload resume.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Url" of relation "fileModels" does not exist
+
+POSITION: 108
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Url" of relation "fileModels" does not exist
+    Position: 108
+    File: parse_target.c
+    Line: 1080
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at JobPortal.Repositories.Repository`2.Add(T item) in /Users/presidio/Desktop/JobPortal-Dummy/Repositories/Repository.cs:line 18
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 56
+   --- End of inner exception stack trace ---
+   at FileService.UploadFileAsync(FileUploadDto fileUploadDto) in /Users/presidio/Desktop/JobPortal-Dummy/Services/FileService.cs:line 85
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/JobPortal-Dummy/Services/JobApplicantService.cs:line 74
+2025-07-11 11:30:07,037 ERROR - Duplicate job application attempt
+JobPortal.Exceptions.DuplicateEntryException: You have already applied for this job.
+   at JobApplicantService.CreateApplication(JobApplicantAddDto jobApplicantAddDto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/JobPortal-Dummy/Services/JobApplicantService.cs:line 64

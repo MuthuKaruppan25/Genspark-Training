@@ -1,0 +1,24 @@
+2025-07-03 15:30:49,195 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:55,581 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:56,681 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:57,035 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:57,764 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:57,982 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:58,359 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-03 15:30:59,059 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78

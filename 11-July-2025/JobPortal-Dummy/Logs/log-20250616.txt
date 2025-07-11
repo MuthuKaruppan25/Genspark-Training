@@ -1,0 +1,1447 @@
+2025-06-16 15:46:25.504 +05:30 [INF] User profile is available. Using '/Users/presidio/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-16 15:46:25.641 +05:30 [WRN] Overriding address(es) 'http://localhost:5149'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-06-16 15:46:25.665 +05:30 [INF] Now listening on: https://[::]:5001
+2025-06-16 15:46:25.666 +05:30 [INF] Now listening on: https://localhost:5001
+2025-06-16 15:46:25.666 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-16 15:46:25.666 +05:30 [INF] Hosting environment: Development
+2025-06-16 15:46:25.666 +05:30 [INF] Content root path: /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal
+2025-06-16 15:46:30.982 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 15:46:31.025 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:46:31.027 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 46.8258ms
+2025-06-16 15:46:31.042 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 15:46:31.044 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:46:31.077 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 15:46:31.086 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 15:46:31.092 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 49.95ms
+2025-06-16 15:46:31.096 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=nwa0l3_qnNiPMopmp3bXsw - null null
+2025-06-16 15:46:31.097 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:46:31.098 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 15:46:39.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:46:39.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 99.7662ms
+2025-06-16 15:46:41.024 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/Login - null null
+2025-06-16 15:46:41.027 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:46:41.027 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/Login - 204 null null 7.1945ms
+2025-06-16 15:46:41.031 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Authentication/Login - application/json 95
+2025-06-16 15:46:41.039 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:46:41.040 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:46:41.063 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-06-16 15:46:42.249 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-06-16 15:46:42.480 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+WHERE u.guid = @__key_0
+LIMIT 1
+2025-06-16 15:46:42.569 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE users SET "RefreshToken" = @p0, "RefreshTokenExpiryTime" = @p1
+WHERE guid = @p2;
+2025-06-16 15:46:42.594 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-06-16 15:46:42.604 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.Login (JobPortal) in 1537.32ms
+2025-06-16 15:46:42.605 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:46:42.611 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/Login - 200 null application/json; charset=utf-8 1580.2742ms
+2025-06-16 15:46:54.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:46:54.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 12.1599ms
+2025-06-16 15:47:09.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:47:09.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8234ms
+2025-06-16 15:47:14.506 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Authentication/login - application/json 92
+2025-06-16 15:47:14.552 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:47:14.552 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-06-16 15:47:14.572 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-06-16 15:47:14.578 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+WHERE u.guid = @__key_0
+LIMIT 1
+2025-06-16 15:47:14.581 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE users SET "RefreshToken" = @p0, "RefreshTokenExpiryTime" = @p1
+WHERE guid = @p2;
+2025-06-16 15:47:14.582 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-06-16 15:47:14.584 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.Login (JobPortal) in 31.7451ms
+2025-06-16 15:47:14.585 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:47:14.585 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/v1/Authentication/login - 200 null application/json; charset=utf-8 79.4635ms
+2025-06-16 15:47:22.489 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/JobPost/add - application/json 1599
+2025-06-16 15:47:22.495 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.JobPostController.AddJobPost (JobPortal)'
+2025-06-16 15:47:22.499 +05:30 [INF] Route matched with {action = "AddJobPost", controller = "JobPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddJobPost(JobPostDto) on controller JobPortal.Controllers.JobPostController (JobPortal).
+2025-06-16 15:47:22.740 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r0.guid, r0."CompanyId", r0."Designation", r0."FirstName", r0."IsDeleted", r0."LastName", r0."PhoneNumber", r0."UserId", j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Location", j."PostedDate", j."RecruiterID", j."SalaryPackage", j."Title"
+FROM (
+    SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+    FROM recruiters AS r
+    WHERE NOT (r."IsDeleted") AND r.guid = @__key_0
+    LIMIT 1
+) AS r0
+LEFT JOIN "jobPosts" AS j ON r0.guid = j."RecruiterID"
+ORDER BY r0.guid
+2025-06-16 15:47:22.873 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = DateTime), @p8='?' (DbType = Guid), @p9='?', @p10='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "jobPosts" (guid, "Description", "EmploymentPosition", "EmploymentType", "IsDeleted", "LastDate", "Location", "PostedDate", "RecruiterID", "SalaryPackage", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-06-16 15:47:22.896 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.899 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.900 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.918 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.919 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.936 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.938 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.940 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.942 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.944 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:22.970 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."Name"
+FROM skills AS s
+2025-06-16 15:47:23.000 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "postSkills" (guid, "JobPostId", "SkillId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:23.018 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "postSkills" (guid, "JobPostId", "SkillId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:47:23.057 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-16 15:47:23.082 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."About", s."ConnectionId", s."Education", s."Experience", s."FirstName", s."IsDeleted", s."LastName", s."UserId", s2.guid, s2."SeekerId", s2."SkillId", s2.guid0, s2."Name", s3.guid, s3."AppliedOn", s3."IsDeleted", s3."JobPostId", s3."SeekerId", s3."Status", s3.guid0, s3."Description", s3."EmploymentPosition", s3."EmploymentType", s3."IsDeleted0", s3."LastDate", s3."Location", s3."PostedDate", s3."RecruiterID", s3."SalaryPackage", s3."Title"
+FROM seekers AS s
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s2 ON s.guid = s2."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Location", j0."PostedDate", j0."RecruiterID", j0."SalaryPackage", j0."Title"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+) AS s3 ON s.guid = s3."SeekerId"
+WHERE NOT (s."IsDeleted")
+ORDER BY s.guid, s2.guid, s2.guid0, s3.guid
+2025-06-16 15:47:23.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPostRegisterResponseDto'.
+2025-06-16 15:47:23.133 +05:30 [INF] Executed action JobPortal.Controllers.JobPostController.AddJobPost (JobPortal) in 632.9665ms
+2025-06-16 15:47:23.133 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.JobPostController.AddJobPost (JobPortal)'
+2025-06-16 15:47:23.133 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/v1/JobPost/add - 200 null application/json; charset=utf-8 643.732ms
+2025-06-16 15:47:24.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:47:24.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 9.8614ms
+2025-06-16 15:47:35.934 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 15:47:35.935 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:47:35.935 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 1.5174ms
+2025-06-16 15:47:35.937 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 15:47:35.938 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=nwa0l3_qnNiPMopmp3bXsw - 200 null null 64840.6852ms
+2025-06-16 15:47:35.941 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 15:47:35.941 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:47:35.942 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 15:47:35.942 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 15:47:35.943 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9539ms
+2025-06-16 15:47:35.950 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=BLOt6-mI9GhkvNrCbVJkhA - null null
+2025-06-16 15:47:35.950 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:47:35.951 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 15:47:39.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:47:39.270 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.2084ms
+2025-06-16 15:47:54.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:47:54.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3ms
+2025-06-16 15:47:57.363 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/Login - null null
+2025-06-16 15:47:57.366 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:47:57.367 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/Login - 204 null null 4.1318ms
+2025-06-16 15:47:57.369 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Authentication/Login - application/json 97
+2025-06-16 15:47:57.369 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:47:57.369 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:47:57.370 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-06-16 15:47:57.375 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-06-16 15:47:57.379 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+WHERE u.guid = @__key_0
+LIMIT 1
+2025-06-16 15:47:57.384 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE users SET "RefreshToken" = @p0, "RefreshTokenExpiryTime" = @p1
+WHERE guid = @p2;
+2025-06-16 15:47:57.388 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."About", s."ConnectionId", s."Education", s."Experience", s."FirstName", s."IsDeleted", s."LastName", s."UserId", s2.guid, s2."SeekerId", s2."SkillId", s2.guid0, s2."Name", s3.guid, s3."AppliedOn", s3."IsDeleted", s3."JobPostId", s3."SeekerId", s3."Status", s3.guid0, s3."Description", s3."EmploymentPosition", s3."EmploymentType", s3."IsDeleted0", s3."LastDate", s3."Location", s3."PostedDate", s3."RecruiterID", s3."SalaryPackage", s3."Title"
+FROM seekers AS s
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s2 ON s.guid = s2."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Location", j0."PostedDate", j0."RecruiterID", j0."SalaryPackage", j0."Title"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+) AS s3 ON s.guid = s3."SeekerId"
+WHERE NOT (s."IsDeleted")
+ORDER BY s.guid, s2.guid, s2.guid0, s3.guid
+2025-06-16 15:47:57.419 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-16 15:47:57.470 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s2.guid, s2."About", s2."ConnectionId", s2."Education", s2."Experience", s2."FirstName", s2."IsDeleted", s2."LastName", s2."UserId", s3.guid, s3."SeekerId", s3."SkillId", s3.guid0, s3."Name", s4.guid, s4."AppliedOn", s4."IsDeleted", s4."JobPostId", s4."SeekerId", s4."Status", s4.guid0, s4."Description", s4."EmploymentPosition", s4."EmploymentType", s4."IsDeleted0", s4."LastDate", s4."Location", s4."PostedDate", s4."RecruiterID", s4."SalaryPackage", s4."Title"
+FROM (
+    SELECT s.guid, s."About", s."ConnectionId", s."Education", s."Experience", s."FirstName", s."IsDeleted", s."LastName", s."UserId"
+    FROM seekers AS s
+    WHERE NOT (s."IsDeleted") AND s.guid = @__key_0
+    LIMIT 1
+) AS s2
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s3 ON s2.guid = s3."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Location", j0."PostedDate", j0."RecruiterID", j0."SalaryPackage", j0."Title"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+) AS s4 ON s2.guid = s4."SeekerId"
+ORDER BY s2.guid, s3.guid, s3.guid0, s4.guid
+2025-06-16 15:47:57.518 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE seekers SET "ConnectionId" = @p0
+WHERE guid = @p1;
+2025-06-16 15:47:57.519 +05:30 [INF] Executing OkObjectResult, writing value of type 'LoginResponseDto'.
+2025-06-16 15:47:57.520 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.Login (JobPortal) in 149.7447ms
+2025-06-16 15:47:57.520 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.Login (JobPortal)'
+2025-06-16 15:47:57.520 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/Login - 200 null application/json; charset=utf-8 151.5204ms
+2025-06-16 15:48:03.055 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/JobPost/add - application/json 1599
+2025-06-16 15:48:03.058 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.JobPostController.AddJobPost (JobPortal)'
+2025-06-16 15:48:03.058 +05:30 [INF] Route matched with {action = "AddJobPost", controller = "JobPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddJobPost(JobPostDto) on controller JobPortal.Controllers.JobPostController (JobPortal).
+2025-06-16 15:48:03.068 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r0.guid, r0."CompanyId", r0."Designation", r0."FirstName", r0."IsDeleted", r0."LastName", r0."PhoneNumber", r0."UserId", j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Location", j."PostedDate", j."RecruiterID", j."SalaryPackage", j."Title"
+FROM (
+    SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+    FROM recruiters AS r
+    WHERE NOT (r."IsDeleted") AND r.guid = @__key_0
+    LIMIT 1
+) AS r0
+LEFT JOIN "jobPosts" AS j ON r0.guid = j."RecruiterID"
+ORDER BY r0.guid
+2025-06-16 15:48:03.071 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = DateTime), @p8='?' (DbType = Guid), @p9='?', @p10='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "jobPosts" (guid, "Description", "EmploymentPosition", "EmploymentType", "IsDeleted", "LastDate", "Location", "PostedDate", "RecruiterID", "SalaryPackage", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-06-16 15:48:03.075 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.077 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.079 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.081 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.083 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO requirements (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.084 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.086 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.087 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.089 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.090 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO responsibilities (guid, "Name", "PostId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.092 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."Name"
+FROM skills AS s
+2025-06-16 15:48:03.095 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "postSkills" (guid, "JobPostId", "SkillId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.097 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "postSkills" (guid, "JobPostId", "SkillId")
+VALUES (@p0, @p1, @p2);
+2025-06-16 15:48:03.100 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."About", s."ConnectionId", s."Education", s."Experience", s."FirstName", s."IsDeleted", s."LastName", s."UserId", s2.guid, s2."SeekerId", s2."SkillId", s2.guid0, s2."Name", s3.guid, s3."AppliedOn", s3."IsDeleted", s3."JobPostId", s3."SeekerId", s3."Status", s3.guid0, s3."Description", s3."EmploymentPosition", s3."EmploymentType", s3."IsDeleted0", s3."LastDate", s3."Location", s3."PostedDate", s3."RecruiterID", s3."SalaryPackage", s3."Title"
+FROM seekers AS s
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s2 ON s.guid = s2."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Location", j0."PostedDate", j0."RecruiterID", j0."SalaryPackage", j0."Title"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+) AS s3 ON s.guid = s3."SeekerId"
+WHERE NOT (s."IsDeleted")
+ORDER BY s.guid, s2.guid, s2.guid0, s3.guid
+2025-06-16 15:48:03.104 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPostRegisterResponseDto'.
+2025-06-16 15:48:03.105 +05:30 [INF] Executed action JobPortal.Controllers.JobPostController.AddJobPost (JobPortal) in 46.3657ms
+2025-06-16 15:48:03.105 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.JobPostController.AddJobPost (JobPortal)'
+2025-06-16 15:48:03.106 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/v1/JobPost/add - 200 null application/json; charset=utf-8 50.6131ms
+2025-06-16 15:48:09.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:48:09.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0845ms
+2025-06-16 15:48:24.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:48:24.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.492ms
+2025-06-16 15:48:39.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:48:39.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8302ms
+2025-06-16 15:48:54.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:48:54.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.2053ms
+2025-06-16 15:49:09.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:49:09.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8884ms
+2025-06-16 15:49:24.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:49:24.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.3923ms
+2025-06-16 15:49:39.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:49:39.270 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9887ms
+2025-06-16 15:49:54.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:49:54.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1675ms
+2025-06-16 15:50:09.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:50:09.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.121ms
+2025-06-16 15:50:24.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:50:24.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.414ms
+2025-06-16 15:50:39.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:50:39.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0665ms
+2025-06-16 15:50:54.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:50:54.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6306ms
+2025-06-16 15:51:09.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:51:09.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.944ms
+2025-06-16 15:51:24.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:51:24.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4088ms
+2025-06-16 15:51:39.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:51:39.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.5928ms
+2025-06-16 15:51:54.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:51:54.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7763ms
+2025-06-16 15:52:09.273 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:52:09.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4327ms
+2025-06-16 15:52:24.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:52:24.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7862ms
+2025-06-16 15:52:39.273 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:52:39.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8675ms
+2025-06-16 15:52:54.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:52:54.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.896ms
+2025-06-16 15:53:09.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:53:09.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7971ms
+2025-06-16 15:53:24.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:53:24.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6009ms
+2025-06-16 15:53:39.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:53:39.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6268ms
+2025-06-16 15:53:54.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:53:54.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2862ms
+2025-06-16 15:54:09.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:54:09.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7557ms
+2025-06-16 15:54:24.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:54:24.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1298ms
+2025-06-16 15:54:39.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:54:39.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4752ms
+2025-06-16 15:54:54.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:54:54.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6386ms
+2025-06-16 15:55:09.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:55:09.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.2799ms
+2025-06-16 15:55:24.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:55:24.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0269ms
+2025-06-16 15:55:39.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:55:39.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.967ms
+2025-06-16 15:55:54.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:55:54.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1275ms
+2025-06-16 15:56:09.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:56:09.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.6608ms
+2025-06-16 15:56:24.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:56:24.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8205ms
+2025-06-16 15:56:39.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:56:39.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9553ms
+2025-06-16 15:56:52.907 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 15:56:52.908 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=BLOt6-mI9GhkvNrCbVJkhA - 200 null null 556924.0945ms
+2025-06-16 15:56:52.912 +05:30 [INF] Connection id "0HNDCNREGTGT6", Request id "0HNDCNREGTGT6:00000007": the application completed without reading the entire request body.
+2025-06-16 15:56:52.939 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 15:56:52.939 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:56:52.940 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.8187ms
+2025-06-16 15:56:52.962 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 15:56:52.963 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:56:52.963 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 15:56:52.963 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 15:56:52.963 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 1.2042ms
+2025-06-16 15:56:52.967 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=NCTx1se5K092zQKNiTcenw - null null
+2025-06-16 15:56:52.967 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:56:52.967 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 15:56:54.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:56:54.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0753ms
+2025-06-16 15:57:09.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:57:09.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.0443ms
+2025-06-16 15:57:19.306 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 15:57:19.306 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=NCTx1se5K092zQKNiTcenw - 200 null null 26338.0849ms
+2025-06-16 15:57:19.310 +05:30 [INF] Connection id "0HNDCNREGTGTB", Request id "0HNDCNREGTGTB:00000003": the application completed without reading the entire request body.
+2025-06-16 15:57:19.333 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 15:57:19.334 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:57:19.334 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 1.0517ms
+2025-06-16 15:57:21.897 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 15:57:21.897 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:57:21.897 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.3715ms
+2025-06-16 15:57:21.911 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 15:57:21.912 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:57:21.912 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 15:57:21.912 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 15:57:21.912 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 0.8002ms
+2025-06-16 15:57:21.914 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=QF8IB5JU3Xj2-2-6w1Kw4w - null null
+2025-06-16 15:57:21.914 +05:30 [INF] CORS policy execution successful.
+2025-06-16 15:57:21.914 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 15:57:24.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:57:24.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.7529ms
+2025-06-16 15:57:39.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:57:39.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7324ms
+2025-06-16 15:57:54.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:57:54.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3301ms
+2025-06-16 15:58:09.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:58:09.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2815ms
+2025-06-16 15:58:24.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:58:24.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.96ms
+2025-06-16 15:58:39.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:58:39.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8948ms
+2025-06-16 15:58:54.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:58:54.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.135ms
+2025-06-16 15:59:09.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:59:09.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9048ms
+2025-06-16 15:59:24.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:59:24.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.0194ms
+2025-06-16 15:59:39.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:59:39.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6573ms
+2025-06-16 15:59:54.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 15:59:54.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.519ms
+2025-06-16 16:00:09.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:00:09.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5368ms
+2025-06-16 16:00:24.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:00:24.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0635ms
+2025-06-16 16:00:39.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:00:39.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8932ms
+2025-06-16 16:00:54.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:00:54.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1295ms
+2025-06-16 16:01:09.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:01:09.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2672ms
+2025-06-16 16:01:24.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:01:24.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2992ms
+2025-06-16 16:01:39.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:01:39.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8198ms
+2025-06-16 16:01:54.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:01:54.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8752ms
+2025-06-16 16:02:09.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:02:09.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3074ms
+2025-06-16 16:02:24.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:02:24.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6079ms
+2025-06-16 16:02:39.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:02:39.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1102ms
+2025-06-16 16:02:54.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:02:54.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4288ms
+2025-06-16 16:03:09.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:03:09.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4713ms
+2025-06-16 16:03:24.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:03:24.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4128ms
+2025-06-16 16:03:39.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:03:39.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9505ms
+2025-06-16 16:03:54.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:03:54.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.5863ms
+2025-06-16 16:04:09.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:04:09.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2697ms
+2025-06-16 16:04:24.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:04:24.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7671ms
+2025-06-16 16:04:39.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:04:39.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1148ms
+2025-06-16 16:04:54.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:04:54.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7921ms
+2025-06-16 16:05:09.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:05:09.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2552ms
+2025-06-16 16:05:24.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:05:24.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1556ms
+2025-06-16 16:05:39.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:05:39.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0597ms
+2025-06-16 16:05:54.315 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:05:54.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8903ms
+2025-06-16 16:06:09.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:06:09.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1084ms
+2025-06-16 16:06:24.314 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:06:24.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6747ms
+2025-06-16 16:06:39.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:06:39.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1912ms
+2025-06-16 16:06:54.315 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:06:54.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8016ms
+2025-06-16 16:07:09.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:07:09.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7039ms
+2025-06-16 16:07:24.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:07:24.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7018ms
+2025-06-16 16:07:39.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:07:39.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3565ms
+2025-06-16 16:07:54.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:07:54.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6131ms
+2025-06-16 16:08:09.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:08:09.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6758ms
+2025-06-16 16:08:24.318 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:08:24.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.1506ms
+2025-06-16 16:08:39.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:08:39.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7497ms
+2025-06-16 16:08:54.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:08:54.322 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.376ms
+2025-06-16 16:09:09.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:09:09.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2276ms
+2025-06-16 16:09:24.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:09:24.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6589ms
+2025-06-16 16:09:39.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:09:39.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0605ms
+2025-06-16 16:09:54.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:09:54.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3702ms
+2025-06-16 16:10:09.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:10:09.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8579ms
+2025-06-16 16:10:24.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:10:24.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.1647ms
+2025-06-16 16:10:39.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:10:39.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0422ms
+2025-06-16 16:10:54.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:10:54.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.2457ms
+2025-06-16 16:11:09.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:11:09.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6169ms
+2025-06-16 16:11:24.277 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:11:24.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7944ms
+2025-06-16 16:11:39.277 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:11:39.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6701ms
+2025-06-16 16:11:54.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:11:54.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0129ms
+2025-06-16 16:12:09.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:12:09.282 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6585ms
+2025-06-16 16:12:24.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:12:24.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8891ms
+2025-06-16 16:12:39.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:12:39.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9513ms
+2025-06-16 16:12:54.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:12:54.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7263ms
+2025-06-16 16:13:09.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:13:09.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6104ms
+2025-06-16 16:13:24.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:13:24.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7705ms
+2025-06-16 16:13:39.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:13:39.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6169ms
+2025-06-16 16:13:54.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:13:54.283 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.2634ms
+2025-06-16 16:14:09.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:14:09.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5664ms
+2025-06-16 16:14:24.281 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:14:24.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9615ms
+2025-06-16 16:14:39.281 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:14:39.283 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7127ms
+2025-06-16 16:14:54.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:14:54.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.693ms
+2025-06-16 16:15:09.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:15:09.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8743ms
+2025-06-16 16:15:24.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:15:24.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4889ms
+2025-06-16 16:15:39.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:15:39.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6376ms
+2025-06-16 16:15:54.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:15:54.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.5182ms
+2025-06-16 16:16:09.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:16:09.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8351ms
+2025-06-16 16:16:24.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:16:24.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9603ms
+2025-06-16 16:16:39.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:16:39.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5819ms
+2025-06-16 16:16:54.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:16:54.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3139ms
+2025-06-16 16:17:09.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:17:09.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9694ms
+2025-06-16 16:17:24.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:17:24.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5999ms
+2025-06-16 16:17:39.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:17:39.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6709ms
+2025-06-16 16:17:54.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:17:54.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0958ms
+2025-06-16 16:18:09.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:18:09.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6857ms
+2025-06-16 16:18:24.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:18:24.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6991ms
+2025-06-16 16:18:39.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:18:39.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3258ms
+2025-06-16 16:18:54.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:18:54.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3734ms
+2025-06-16 16:19:09.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:19:09.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.4081ms
+2025-06-16 16:19:24.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:19:24.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5876ms
+2025-06-16 16:19:39.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:19:39.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6176ms
+2025-06-16 16:19:54.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:19:54.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2076ms
+2025-06-16 16:20:09.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:20:09.289 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.2898ms
+2025-06-16 16:20:24.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:20:24.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5501ms
+2025-06-16 16:20:39.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:20:39.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1453ms
+2025-06-16 16:20:54.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:20:54.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7893ms
+2025-06-16 16:21:09.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:21:09.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0545ms
+2025-06-16 16:21:24.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:21:24.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0047ms
+2025-06-16 16:21:39.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:21:39.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2381ms
+2025-06-16 16:21:54.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:21:54.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8638ms
+2025-06-16 16:22:09.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:22:09.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8476ms
+2025-06-16 16:22:24.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:22:24.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5422ms
+2025-06-16 16:22:39.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:22:39.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0053ms
+2025-06-16 16:22:54.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:22:54.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8714ms
+2025-06-16 16:23:09.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:23:09.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6286ms
+2025-06-16 16:23:24.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:23:24.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4189ms
+2025-06-16 16:23:39.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:23:39.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.478ms
+2025-06-16 16:23:54.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:23:54.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3315ms
+2025-06-16 16:24:09.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:24:09.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.408ms
+2025-06-16 16:24:24.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:24:24.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2165ms
+2025-06-16 16:24:39.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:24:39.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.941ms
+2025-06-16 16:24:54.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:24:54.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3872ms
+2025-06-16 16:25:09.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:25:09.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5754ms
+2025-06-16 16:25:24.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:25:24.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0621ms
+2025-06-16 16:25:39.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:25:39.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5843ms
+2025-06-16 16:25:54.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:25:54.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1462ms
+2025-06-16 16:26:09.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:26:09.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.95ms
+2025-06-16 16:26:24.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:26:24.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7333ms
+2025-06-16 16:26:39.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:26:39.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3983ms
+2025-06-16 16:26:49.257 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 16:26:49.265 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=QF8IB5JU3Xj2-2-6w1Kw4w - 200 null null 1767355.7648ms
+2025-06-16 16:26:49.265 +05:30 [INF] Connection id "0HNDCNREGTGTF", Request id "0HNDCNREGTGTF:00000003": the application completed without reading the entire request body.
+2025-06-16 16:26:49.316 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 16:26:49.322 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:49.322 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 5.6379ms
+2025-06-16 16:26:49.450 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 16:26:49.451 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:49.451 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 16:26:49.452 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 16:26:49.452 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 2.3513ms
+2025-06-16 16:26:49.464 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=wFYtINcmePfvd9GPx61cSg - null null
+2025-06-16 16:26:49.464 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:49.464 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 16:26:50.251 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 16:26:50.252 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=wFYtINcmePfvd9GPx61cSg - 200 null null 788.0706ms
+2025-06-16 16:26:50.252 +05:30 [INF] Connection id "0HNDCNREGTGTH", Request id "0HNDCNREGTGTH:00000003": the application completed without reading the entire request body.
+2025-06-16 16:26:50.283 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 16:26:50.283 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:50.283 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.8061ms
+2025-06-16 16:26:50.341 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 16:26:50.341 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:50.344 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 16:26:50.345 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 16:26:50.347 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 6.3342ms
+2025-06-16 16:26:50.365 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=pqS17rmDLCGlmKNSY0lcZg - null null
+2025-06-16 16:26:50.366 +05:30 [INF] CORS policy execution successful.
+2025-06-16 16:26:50.368 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 16:26:54.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:26:54.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0518ms
+2025-06-16 16:27:09.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:27:09.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2244ms
+2025-06-16 16:27:24.294 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:27:24.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6122ms
+2025-06-16 16:27:39.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:27:39.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2795ms
+2025-06-16 16:27:54.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:27:54.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2895ms
+2025-06-16 16:28:09.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:28:09.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3547ms
+2025-06-16 16:28:24.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:28:24.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8207ms
+2025-06-16 16:28:39.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:28:39.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1538ms
+2025-06-16 16:28:54.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:28:54.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.6998ms
+2025-06-16 16:29:09.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:29:09.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.65ms
+2025-06-16 16:29:24.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:29:24.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3521ms
+2025-06-16 16:29:39.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:29:39.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3792ms
+2025-06-16 16:29:54.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:29:54.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2582ms
+2025-06-16 16:30:09.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:30:09.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6256ms
+2025-06-16 16:30:24.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:30:24.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 12.1269ms
+2025-06-16 16:30:39.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:30:39.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0588ms
+2025-06-16 16:30:54.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:30:54.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2257ms
+2025-06-16 16:31:09.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:31:09.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5041ms
+2025-06-16 16:31:24.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:31:24.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8503ms
+2025-06-16 16:31:39.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:31:39.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.0842ms
+2025-06-16 16:31:54.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:31:54.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9673ms
+2025-06-16 16:32:09.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:32:09.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1179ms
+2025-06-16 16:32:24.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:32:24.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8379ms
+2025-06-16 16:32:39.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:32:39.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3756ms
+2025-06-16 16:32:54.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:32:54.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3534ms
+2025-06-16 16:33:09.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:33:09.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7859ms
+2025-06-16 16:33:24.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:33:24.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1576ms
+2025-06-16 16:33:39.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:33:39.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3288ms
+2025-06-16 16:33:54.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:33:54.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.946ms
+2025-06-16 16:34:09.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:34:09.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.0697ms
+2025-06-16 16:34:24.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:34:24.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1567ms
+2025-06-16 16:34:39.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:34:39.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.2998ms
+2025-06-16 16:34:54.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:34:54.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8062ms
+2025-06-16 16:35:09.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:35:09.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1948ms
+2025-06-16 16:35:24.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:35:24.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5876ms
+2025-06-16 16:35:39.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:35:39.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.9604ms
+2025-06-16 16:35:54.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:35:54.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.3265ms
+2025-06-16 16:36:09.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:36:09.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.9456ms
+2025-06-16 16:36:24.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:36:24.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.28ms
+2025-06-16 16:36:39.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:36:39.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.9992ms
+2025-06-16 16:36:54.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:36:54.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.5677ms
+2025-06-16 16:37:09.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:37:09.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3262ms
+2025-06-16 16:37:24.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:37:24.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.4407ms
+2025-06-16 16:37:39.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:37:39.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7853ms
+2025-06-16 16:37:54.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:37:54.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6364ms
+2025-06-16 16:38:09.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:38:09.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.876ms
+2025-06-16 16:38:24.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:38:24.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4436ms
+2025-06-16 16:38:39.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:38:39.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0372ms
+2025-06-16 16:38:54.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:38:54.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9499ms
+2025-06-16 16:39:09.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:39:09.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9615ms
+2025-06-16 16:39:24.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:39:24.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8815ms
+2025-06-16 16:39:39.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:39:39.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9997ms
+2025-06-16 16:39:54.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:39:54.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.5306ms
+2025-06-16 16:40:09.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:40:09.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.14ms
+2025-06-16 16:40:24.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:40:24.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8238ms
+2025-06-16 16:40:39.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:40:39.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4007ms
+2025-06-16 16:40:54.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:40:54.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4862ms
+2025-06-16 16:41:09.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:41:09.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3715ms
+2025-06-16 16:41:24.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:41:24.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5048ms
+2025-06-16 16:41:39.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:41:39.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.0339ms
+2025-06-16 16:41:54.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:41:54.384 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1406ms
+2025-06-16 16:42:09.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:42:09.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.3562ms
+2025-06-16 16:42:24.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:42:24.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9511ms
+2025-06-16 16:42:39.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:42:39.389 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.422ms
+2025-06-16 16:42:54.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:42:54.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7418ms
+2025-06-16 16:43:09.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:43:09.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4675ms
+2025-06-16 16:43:24.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:43:24.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1565ms
+2025-06-16 16:43:39.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:43:39.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.8837ms
+2025-06-16 16:43:54.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:43:54.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.8849ms
+2025-06-16 16:44:09.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:44:09.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1756ms
+2025-06-16 16:44:24.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:44:24.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.013ms
+2025-06-16 16:44:39.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:44:39.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.2343ms
+2025-06-16 16:44:54.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:44:54.388 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0687ms
+2025-06-16 16:45:09.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:45:09.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3082ms
+2025-06-16 16:45:24.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:45:24.403 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 15.4653ms
+2025-06-16 16:45:39.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:45:39.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8849ms
+2025-06-16 16:45:54.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:45:54.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6405ms
+2025-06-16 16:46:09.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:46:09.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7548ms
+2025-06-16 16:46:24.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:46:24.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.5847ms
+2025-06-16 16:46:39.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:46:39.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.495ms
+2025-06-16 16:46:54.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:46:54.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2484ms
+2025-06-16 16:47:09.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:47:09.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8368ms
+2025-06-16 16:47:24.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:47:24.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8186ms
+2025-06-16 16:47:39.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:47:39.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2471ms
+2025-06-16 16:47:54.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:47:54.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.9999ms
+2025-06-16 16:48:09.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:48:09.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9872ms
+2025-06-16 16:48:24.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:48:24.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.038ms
+2025-06-16 16:48:39.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:48:39.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.512ms
+2025-06-16 16:48:54.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:48:54.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1345ms
+2025-06-16 16:49:09.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:49:09.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2337ms
+2025-06-16 16:49:24.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:49:24.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6211ms
+2025-06-16 16:49:39.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:49:39.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8132ms
+2025-06-16 16:49:54.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:49:54.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2079ms
+2025-06-16 16:50:09.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:50:09.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.4321ms
+2025-06-16 16:50:24.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:50:24.398 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2192ms
+2025-06-16 16:50:39.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:50:39.399 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8012ms
+2025-06-16 16:50:54.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:50:54.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4283ms
+2025-06-16 16:51:09.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:51:09.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7803ms
+2025-06-16 16:51:24.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:51:24.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7138ms
+2025-06-16 16:51:39.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:51:39.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3676ms
+2025-06-16 16:51:54.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:51:54.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1619ms
+2025-06-16 16:52:09.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:52:09.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6221ms
+2025-06-16 16:52:24.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:52:24.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.1441ms
+2025-06-16 16:52:39.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:52:39.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.0846ms
+2025-06-16 16:52:54.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:52:54.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2973ms
+2025-06-16 16:53:09.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:53:09.403 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3645ms
+2025-06-16 16:53:24.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:53:24.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1696ms
+2025-06-16 16:53:39.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:53:39.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.3382ms
+2025-06-16 16:53:54.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:53:54.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3961ms
+2025-06-16 16:54:09.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:54:09.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4575ms
+2025-06-16 16:54:24.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:54:24.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0757ms
+2025-06-16 16:54:39.405 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:54:39.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2814ms
+2025-06-16 16:54:54.405 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:54:54.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6087ms
+2025-06-16 16:55:09.405 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:55:09.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.306ms
+2025-06-16 16:55:24.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:55:24.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6791ms
+2025-06-16 16:55:39.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:55:39.410 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.647ms
+2025-06-16 16:55:54.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:55:54.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.277ms
+2025-06-16 16:56:09.407 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:56:09.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8645ms
+2025-06-16 16:56:24.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:56:24.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6105ms
+2025-06-16 16:56:39.418 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:56:39.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2701ms
+2025-06-16 16:56:54.420 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:56:54.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.4258ms
+2025-06-16 16:57:09.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:57:09.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7605ms
+2025-06-16 16:57:24.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:57:24.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5205ms
+2025-06-16 16:57:39.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:57:39.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.2931ms
+2025-06-16 16:57:54.422 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:57:54.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6786ms
+2025-06-16 16:58:09.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:58:09.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3925ms
+2025-06-16 16:58:24.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:58:24.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7841ms
+2025-06-16 16:58:39.423 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:58:39.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9402ms
+2025-06-16 16:58:54.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:58:54.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6798ms
+2025-06-16 16:59:09.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:59:09.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8565ms
+2025-06-16 16:59:24.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:59:24.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6898ms
+2025-06-16 16:59:39.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:59:39.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2286ms
+2025-06-16 16:59:54.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 16:59:54.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.4362ms
+2025-06-16 17:00:09.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:00:09.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7377ms
+2025-06-16 17:00:24.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:00:24.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8525ms
+2025-06-16 17:00:39.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:00:39.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.9744ms
+2025-06-16 17:00:54.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:00:54.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1535ms
+2025-06-16 17:01:09.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:01:09.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6061ms
+2025-06-16 17:01:24.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:01:24.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8367ms
+2025-06-16 17:01:39.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:01:39.431 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0249ms
+2025-06-16 17:01:54.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:01:54.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1627ms
+2025-06-16 17:02:09.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:02:09.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1113ms
+2025-06-16 17:02:24.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:02:24.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2873ms
+2025-06-16 17:02:39.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:02:39.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.972ms
+2025-06-16 17:02:54.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:02:54.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.998ms
+2025-06-16 17:03:09.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:03:09.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.115ms
+2025-06-16 17:03:24.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:03:24.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8566ms
+2025-06-16 17:03:39.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:03:39.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.6556ms
+2025-06-16 17:03:54.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:03:54.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0968ms
+2025-06-16 17:04:09.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:04:09.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2191ms
+2025-06-16 17:04:24.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:04:24.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4317ms
+2025-06-16 17:04:39.436 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:04:39.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5114ms
+2025-06-16 17:04:54.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:04:54.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2309ms
+2025-06-16 17:05:09.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:05:09.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8057ms
+2025-06-16 17:05:24.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:05:24.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.127ms
+2025-06-16 17:05:39.436 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:05:39.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0717ms
+2025-06-16 17:05:54.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:05:54.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9135ms
+2025-06-16 17:06:09.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:06:09.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1036ms
+2025-06-16 17:06:24.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:06:24.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0033ms
+2025-06-16 17:06:39.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:06:39.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8703ms
+2025-06-16 17:06:54.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:06:54.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.5698ms
+2025-06-16 17:07:09.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:07:09.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8673ms
+2025-06-16 17:07:24.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:07:24.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.348ms
+2025-06-16 17:07:39.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:07:39.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.792ms
+2025-06-16 17:07:54.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:07:54.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9591ms
+2025-06-16 17:08:09.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:08:09.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9925ms
+2025-06-16 17:08:24.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:08:24.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6231ms
+2025-06-16 17:08:39.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:08:39.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6569ms
+2025-06-16 17:08:54.441 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:08:54.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3664ms
+2025-06-16 17:09:09.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:09:09.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.5822ms
+2025-06-16 17:09:24.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:09:24.445 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8696ms
+2025-06-16 17:09:39.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:09:39.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2584ms
+2025-06-16 17:09:54.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:09:54.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.815ms
+2025-06-16 17:10:09.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:10:09.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8862ms
+2025-06-16 17:10:24.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:10:24.448 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7952ms
+2025-06-16 17:10:39.445 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:10:39.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6359ms
+2025-06-16 17:10:54.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:10:54.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8922ms
+2025-06-16 17:11:09.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:11:09.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8139ms
+2025-06-16 17:11:24.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:11:24.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.105ms
+2025-06-16 17:11:39.455 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:11:39.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4838ms
+2025-06-16 17:11:54.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:11:54.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9878ms
+2025-06-16 17:12:09.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:12:09.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6993ms
+2025-06-16 17:12:24.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:12:24.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7997ms
+2025-06-16 17:12:39.461 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:12:39.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9288ms
+2025-06-16 17:12:54.461 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:12:54.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0435ms
+2025-06-16 17:13:09.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:13:09.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0505ms
+2025-06-16 17:13:24.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:13:24.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8068ms
+2025-06-16 17:13:39.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:13:39.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6243ms
+2025-06-16 17:13:54.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:13:54.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7774ms
+2025-06-16 17:14:09.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:14:09.465 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7833ms
+2025-06-16 17:14:24.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:14:24.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3067ms
+2025-06-16 17:14:39.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:14:39.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3939ms
+2025-06-16 17:14:54.464 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:14:54.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3711ms
+2025-06-16 17:15:09.465 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:15:09.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8152ms
+2025-06-16 17:15:24.465 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:15:24.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0124ms
+2025-06-16 17:15:39.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:15:39.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.0424ms
+2025-06-16 17:15:54.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:15:54.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3101ms
+2025-06-16 17:16:09.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:16:09.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.7546ms
+2025-06-16 17:16:24.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:16:24.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3722ms
+2025-06-16 17:16:39.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:16:39.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.7676ms
+2025-06-16 17:16:54.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:16:54.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.4031ms
+2025-06-16 17:17:09.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:17:09.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.1467ms
+2025-06-16 17:17:24.470 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:17:24.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0709ms
+2025-06-16 17:17:39.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:17:39.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8529ms
+2025-06-16 17:17:54.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:17:54.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7525ms
+2025-06-16 17:18:09.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:18:09.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.87ms
+2025-06-16 17:18:24.470 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:18:24.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9999ms
+2025-06-16 17:18:39.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:18:39.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6904ms
+2025-06-16 17:18:54.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:18:54.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0073ms
+2025-06-16 17:19:09.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:19:09.476 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4153ms
+2025-06-16 17:19:24.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:19:24.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9791ms
+2025-06-16 17:19:39.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:19:39.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8773ms
+2025-06-16 17:19:54.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:19:54.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.697ms
+2025-06-16 17:20:09.474 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:20:09.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7687ms
+2025-06-16 17:20:24.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:20:24.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9958ms
+2025-06-16 17:20:39.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:20:39.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0422ms
+2025-06-16 17:20:54.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:20:54.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2264ms
+2025-06-16 17:21:09.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:21:09.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7965ms
+2025-06-16 17:21:24.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:21:24.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6717ms
+2025-06-16 17:21:39.554 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:21:39.556 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5236ms
+2025-06-16 17:21:54.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:21:54.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0096ms
+2025-06-16 17:22:09.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:22:09.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.5325ms
+2025-06-16 17:22:24.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:22:24.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6126ms
+2025-06-16 17:22:39.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:22:39.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9308ms
+2025-06-16 17:22:54.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:22:54.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0646ms
+2025-06-16 17:23:09.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:23:09.481 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6808ms
+2025-06-16 17:23:24.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:23:24.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8679ms
+2025-06-16 17:23:39.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:23:39.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7571ms
+2025-06-16 17:23:54.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:23:54.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9749ms
+2025-06-16 17:24:09.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:24:09.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0835ms
+2025-06-16 17:24:24.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:24:24.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2957ms
+2025-06-16 17:24:39.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:24:39.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7562ms
+2025-06-16 17:24:54.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:24:54.489 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.1921ms
+2025-06-16 17:25:09.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:25:09.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9324ms
+2025-06-16 17:25:24.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:25:24.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7474ms
+2025-06-16 17:25:39.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:25:39.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8957ms
+2025-06-16 17:25:54.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:25:54.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2605ms
+2025-06-16 17:26:09.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:26:09.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.424ms
+2025-06-16 17:26:24.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:26:24.489 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.787ms
+2025-06-16 17:26:39.489 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:26:39.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7328ms
+2025-06-16 17:26:54.489 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:26:54.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6471ms
+2025-06-16 17:27:09.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:27:09.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3977ms
+2025-06-16 17:27:24.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:27:24.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6597ms
+2025-06-16 17:27:39.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:27:39.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9377ms
+2025-06-16 17:27:54.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:27:54.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8751ms
+2025-06-16 17:28:09.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:28:09.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7151ms
+2025-06-16 17:28:24.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:28:24.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7326ms
+2025-06-16 17:28:39.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:28:39.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6545ms
+2025-06-16 17:28:54.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:28:54.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7236ms
+2025-06-16 17:29:09.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:29:09.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7795ms
+2025-06-16 17:29:24.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:29:24.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.8013ms
+2025-06-16 17:29:39.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:29:39.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9928ms
+2025-06-16 17:29:54.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:29:54.497 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6599ms
+2025-06-16 17:30:09.497 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:30:09.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7965ms
+2025-06-16 17:30:24.497 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:30:24.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7237ms
+2025-06-16 17:30:39.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:30:39.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2031ms
+2025-06-16 17:30:54.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:30:54.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.4524ms
+2025-06-16 17:31:09.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:31:09.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7331ms
+2025-06-16 17:31:24.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:31:24.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7521ms
+2025-06-16 17:31:39.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:31:39.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8964ms
+2025-06-16 17:31:54.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:31:54.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.2997ms
+2025-06-16 17:32:09.500 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:32:09.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7404ms
+2025-06-16 17:32:24.501 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:32:24.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6938ms
+2025-06-16 17:32:39.501 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:32:39.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9649ms
+2025-06-16 17:32:54.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:32:54.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9246ms
+2025-06-16 17:33:09.500 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:33:09.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.9754ms
+2025-06-16 17:33:24.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:33:24.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9945ms
+2025-06-16 17:33:39.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:33:39.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8748ms
+2025-06-16 17:33:54.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:33:54.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3302ms
+2025-06-16 17:34:09.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:34:09.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.3023ms
+2025-06-16 17:34:24.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:34:24.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3362ms
+2025-06-16 17:34:39.505 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:34:39.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7143ms
+2025-06-16 17:34:54.505 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:34:54.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7184ms
+2025-06-16 17:35:09.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:35:09.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6804ms
+2025-06-16 17:35:24.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:35:24.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0157ms
+2025-06-16 17:35:39.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:35:39.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.1944ms
+2025-06-16 17:35:54.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:35:54.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1093ms
+2025-06-16 17:36:09.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:36:09.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8739ms
+2025-06-16 17:36:24.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:36:24.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9124ms
+2025-06-16 17:36:39.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:36:39.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6006ms
+2025-06-16 17:36:54.508 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:36:54.510 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6438ms
+2025-06-16 17:37:09.508 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:37:09.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0418ms
+2025-06-16 17:37:24.509 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:37:24.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.8311ms
+2025-06-16 17:37:39.508 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:37:39.510 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1563ms
+2025-06-16 17:37:54.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:37:54.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6353ms
+2025-06-16 17:38:09.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:38:09.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6971ms
+2025-06-16 17:38:24.509 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:38:24.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.7879ms
+2025-06-16 17:38:39.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:38:39.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.4497ms
+2025-06-16 17:38:54.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:38:54.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 8.4194ms
+2025-06-16 17:39:09.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:39:09.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.6245ms
+2025-06-16 17:39:24.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:39:24.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1089ms
+2025-06-16 17:39:39.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:39:39.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.5287ms
+2025-06-16 17:39:54.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:39:54.518 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.4032ms
+2025-06-16 17:40:09.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:40:09.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9194ms
+2025-06-16 17:40:24.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:40:24.517 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.9958ms
+2025-06-16 17:40:39.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:40:39.517 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.6443ms
+2025-06-16 17:40:54.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:40:54.517 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0493ms
+2025-06-16 17:41:09.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:41:09.516 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8637ms
+2025-06-16 17:41:24.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:41:24.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.9045ms
+2025-06-16 17:41:39.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:41:39.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7651ms
+2025-06-16 17:41:54.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:41:54.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.393ms
+2025-06-16 17:42:09.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:42:09.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.5098ms
+2025-06-16 17:42:24.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:42:24.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1811ms
+2025-06-16 17:42:39.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:42:39.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.0674ms
+2025-06-16 17:42:54.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:42:54.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.528ms
+2025-06-16 17:43:09.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:43:09.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9133ms
+2025-06-16 17:43:24.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:43:24.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3117ms
+2025-06-16 17:43:39.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:43:39.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.7472ms
+2025-06-16 17:43:54.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:43:54.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0916ms
+2025-06-16 17:44:09.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:44:09.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2664ms
+2025-06-16 17:44:24.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:44:24.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.2778ms
+2025-06-16 17:44:39.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:44:39.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9442ms
+2025-06-16 17:44:54.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:44:54.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3569ms
+2025-06-16 17:45:09.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:45:09.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8515ms
+2025-06-16 17:45:24.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:45:24.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8293ms
+2025-06-16 17:45:39.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:45:39.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.7212ms
+2025-06-16 17:45:54.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:45:54.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.0166ms
+2025-06-16 17:46:09.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:46:09.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.1761ms
+2025-06-16 17:46:24.459 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:46:24.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.8415ms
+2025-06-16 17:46:39.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:46:39.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.7642ms
+2025-06-16 17:46:54.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:46:54.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 11.9775ms
+2025-06-16 17:47:09.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:47:09.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 4.1589ms
+2025-06-16 17:47:24.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:47:24.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.6957ms
+2025-06-16 17:47:39.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:47:39.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.6501ms
+2025-06-16 17:47:54.175 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 17:47:54.176 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=pqS17rmDLCGlmKNSY0lcZg - 200 null null 4863644.3687ms
+2025-06-16 17:47:54.176 +05:30 [INF] Connection id "0HNDCNREGTGTJ", Request id "0HNDCNREGTGTJ:00000003": the application completed without reading the entire request body.
+2025-06-16 17:47:54.246 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 17:47:54.262 +05:30 [INF] CORS policy execution successful.
+2025-06-16 17:47:54.265 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 18.396ms
+2025-06-16 17:47:54.294 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 17:47:54.294 +05:30 [INF] CORS policy execution successful.
+2025-06-16 17:47:54.294 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 17:47:54.300 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 17:47:54.301 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 7.5893ms
+2025-06-16 17:47:54.308 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=GtBNajLrJTT9_SbDX57jew - null null
+2025-06-16 17:47:54.309 +05:30 [INF] CORS policy execution successful.
+2025-06-16 17:47:54.309 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 17:47:54.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:47:54.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.3171ms
+2025-06-16 17:48:09.453 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 17:48:09.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.4426ms
+2025-06-16 18:36:57.981 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:36:57.983 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.6328ms
+2025-06-16 18:37:01.155 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 18:37:01.156 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=GtBNajLrJTT9_SbDX57jew - 200 null null 33345.4995ms
+2025-06-16 18:37:01.159 +05:30 [INF] Connection id "0HNDCNREGTGTL", Request id "0HNDCNREGTGTL:00000003": the application completed without reading the entire request body.
+2025-06-16 18:37:01.477 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 18:37:01.478 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:37:01.479 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 1.7346ms
+2025-06-16 18:37:01.684 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 18:37:01.685 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:37:01.686 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 18:37:01.686 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 18:37:01.687 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 3.3289ms
+2025-06-16 18:37:01.698 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=rka8q2a5v_A1GZjdmc9IHg - null null
+2025-06-16 18:37:01.699 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:37:01.700 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 18:37:12.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:37:12.972 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.3359ms
+2025-06-16 18:37:27.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:37:27.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.1814ms
+2025-06-16 18:37:42.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:37:42.974 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 9.9374ms
+2025-06-16 18:37:57.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:37:57.969 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 6.1834ms
+2025-06-16 18:43:29.087 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:43:29.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.136ms
+2025-06-16 18:43:31.441 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 18:43:31.441 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=rka8q2a5v_A1GZjdmc9IHg - 200 null null 73644.4776ms
+2025-06-16 18:43:31.442 +05:30 [INF] Connection id "0HNDCNREGTGTO", Request id "0HNDCNREGTGTO:00000003": the application completed without reading the entire request body.
+2025-06-16 18:43:31.460 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 18:43:31.461 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:43:31.461 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.957ms
+2025-06-16 18:43:31.475 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 18:43:31.476 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:43:31.476 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 18:43:31.477 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 18:43:31.477 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 1.5474ms
+2025-06-16 18:43:31.479 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=0tlFxaSscNp6fS8d7lupGQ - null null
+2025-06-16 18:43:31.479 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:43:31.479 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 18:43:44.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:43:44.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 8.3898ms
+2025-06-16 18:57:45.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 18:57:45.761 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.2879ms
+2025-06-16 18:57:55.368 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 18:57:55.369 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=0tlFxaSscNp6fS8d7lupGQ - 200 null null 38288.3613ms
+2025-06-16 18:57:55.369 +05:30 [INF] Connection id "0HNDCNREGTGTR", Request id "0HNDCNREGTGTR:00000003": the application completed without reading the entire request body.
+2025-06-16 18:57:55.402 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 18:57:55.403 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:57:55.404 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 1.4157ms
+2025-06-16 18:57:55.435 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 18:57:55.435 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:57:55.435 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 18:57:55.436 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 18:57:55.436 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 0.8115ms
+2025-06-16 18:57:55.438 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=LgfNP-jHkJ9whB5esyTobQ - null null
+2025-06-16 18:57:55.438 +05:30 [INF] CORS policy execution successful.
+2025-06-16 18:57:55.439 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 19:03:17.304 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 19:03:17.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.3348ms
+2025-06-16 19:03:18.470 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 19:03:18.471 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=LgfNP-jHkJ9whB5esyTobQ - 200 null null 6937.8487ms
+2025-06-16 19:03:18.471 +05:30 [INF] Connection id "0HNDCNREGTGTU", Request id "0HNDCNREGTGTU:00000003": the application completed without reading the entire request body.
+2025-06-16 19:03:18.528 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 19:03:18.528 +05:30 [INF] CORS policy execution successful.
+2025-06-16 19:03:18.529 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.5608ms
+2025-06-16 19:03:18.559 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 19:03:18.559 +05:30 [INF] CORS policy execution successful.
+2025-06-16 19:03:18.560 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 19:03:18.560 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 19:03:18.560 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 0.9069ms
+2025-06-16 19:03:18.566 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=5BZLgSSvdpvU3PLFXSmD6w - null null
+2025-06-16 19:03:18.567 +05:30 [INF] CORS policy execution successful.
+2025-06-16 19:03:18.567 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 19:03:30.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 19:03:30.606 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 12.0699ms
+2025-06-16 19:48:12.966 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 19:48:12.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 3.9064ms
+2025-06-16 19:48:26.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 19:48:26.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.8331ms
+2025-06-16 19:48:41.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 19:48:41.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 12.0873ms
+2025-06-16 20:24:35.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 20:24:35.115 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 18.7717ms
+2025-06-16 20:24:35.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 20:24:35.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 7.5807ms
+2025-06-16 20:24:45.151 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 20:24:45.154 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=5BZLgSSvdpvU3PLFXSmD6w - 200 null null 97791.2597ms
+2025-06-16 20:24:45.155 +05:30 [INF] Connection id "0HNDCNREGTGU1", Request id "0HNDCNREGTGU1:00000003": the application completed without reading the entire request body.
+2025-06-16 20:24:45.172 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 20:24:45.174 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:45.176 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 3.7922ms
+2025-06-16 20:24:45.198 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 20:24:45.199 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:45.200 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 20:24:45.202 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 20:24:45.202 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 4.4711ms
+2025-06-16 20:24:45.238 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=-tGYX2xyizr0ZJhiLMnbCA - null null
+2025-06-16 20:24:45.238 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:45.238 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 20:24:49.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 20:24:49.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 2.513ms
+2025-06-16 20:24:55.491 +05:30 [INF] Executed endpoint '/notificationHub'
+2025-06-16 20:24:55.491 +05:30 [INF] Request finished HTTP/2 CONNECT https://localhost:5001/notificationhub?id=-tGYX2xyizr0ZJhiLMnbCA - 200 null null 10256.4963ms
+2025-06-16 20:24:55.491 +05:30 [INF] Connection id "0HNDCNREGTGU5", Request id "0HNDCNREGTGU5:00000003": the application completed without reading the entire request body.
+2025-06-16 20:24:55.516 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null null
+2025-06-16 20:24:55.517 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:55.517 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 204 null null 0.7046ms
+2025-06-16 20:24:55.619 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - null 0
+2025-06-16 20:24:55.619 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:55.620 +05:30 [INF] Executing endpoint '/notificationHub/negotiate'
+2025-06-16 20:24:55.620 +05:30 [INF] Executed endpoint '/notificationHub/negotiate'
+2025-06-16 20:24:55.620 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/notificationhub/negotiate?negotiateVersion=1 - 200 316 application/json 1.9512ms
+2025-06-16 20:24:55.625 +05:30 [INF] Request starting HTTP/2 CONNECT https://localhost:5001/notificationhub?id=kdI9CV-Lm3VWnLnfG9ZcNQ - null null
+2025-06-16 20:24:55.625 +05:30 [INF] CORS policy execution successful.
+2025-06-16 20:24:55.625 +05:30 [INF] Executing endpoint '/notificationHub'
+2025-06-16 20:25:04.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 20:25:04.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 5.9449ms
+2025-06-16 22:28:19.508 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/metrics - null null
+2025-06-16 22:28:19.510 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/metrics - 200 null application/openmetrics-text; version=1.0.0; charset=utf-8 1.9377ms
