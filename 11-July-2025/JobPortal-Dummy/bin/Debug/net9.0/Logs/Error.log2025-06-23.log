@@ -1,0 +1,35 @@
+2025-06-23 15:36:15,137 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 16:06:34,371 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 16:40:20,431 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 17:59:31,033 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 18:38:19,878 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 22:41:37,772 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67
+2025-06-23 22:59:24,956 ERROR - Token refresh failed
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at TokenService.GetPrincipalFromExpiredToken(String token) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/TokenService.cs:line 64
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 67

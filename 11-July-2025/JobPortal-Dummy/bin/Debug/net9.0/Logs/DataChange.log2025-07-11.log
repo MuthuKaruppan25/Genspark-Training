@@ -1,0 +1,30 @@
+2025-07-11 11:06:54,654 INFO  - Industry type added: Name = Information Technology, Id = e8bfe87c-5633-4de0-896e-8a977a80c2b3
+2025-07-11 11:07:23,737 INFO  - Company registered: Name = TechNova Solution, CompanyId = 2a9d88ae-8811-4b3d-847e-51a1f9f5cb1b
+2025-07-11 11:09:25,053 INFO  - Recruiter registered successfully: Email=muthu@gmail.com, Company=TechNova Solution
+2025-07-11 11:09:50,516 INFO  - User logged in: muthu@gmail.com
+2025-07-11 11:18:43,012 INFO  - Skill added: Angular
+2025-07-11 11:19:29,491 INFO  - JobPost added by recruiter: 49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff, Job Title: Full Stack Developer
+2025-07-11 11:20:07,302 INFO  - Seeker registered: Email = muthukaruppan@gmail.com, SeekerId = Muthu
+2025-07-11 11:20:22,675 INFO  - User logged in: muthukaruppan@gmail.com
+2025-07-11 11:31:29,414 INFO  - Resume uploaded: SeekerId = 8f7283e8-1b5f-403c-8a24-3ed02674eb67, JobPostId = cdfb4f60-5a33-429a-8647-03888aef18f0
+2025-07-11 11:31:29,420 INFO  - Job application created for SeekerId = 8f7283e8-1b5f-403c-8a24-3ed02674eb67, JobPostId = cdfb4f60-5a33-429a-8647-03888aef18f0
+2025-07-11 11:31:43,159 INFO  - Resume uploaded: SeekerId = 8f7283e8-1b5f-403c-8a24-3ed02674eb67, JobPostId = cdfb4f60-5a33-429a-8647-03888aef18f0
+2025-07-11 11:31:43,160 INFO  - Job application created for SeekerId = 8f7283e8-1b5f-403c-8a24-3ed02674eb67, JobPostId = cdfb4f60-5a33-429a-8647-03888aef18f0
+2025-07-11 11:33:51,550 INFO  - User logged in: muthu@gmail.com
+2025-07-11 11:38:27,129 INFO  - User logged in: muthu@gmail.com
+2025-07-11 11:38:30,363 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:38:46,050 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:38:50,220 INFO  - Fetched all skills.
+2025-07-11 11:38:51,215 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:38:52,079 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:38:53,651 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:38:57,102 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:42:29,624 INFO  - Fetched all skills.
+2025-07-11 11:42:49,179 INFO  - Fetched all skills.
+2025-07-11 11:42:50,839 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:43:06,673 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:43:16,796 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:43:19,062 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 11:43:20,309 INFO  - Fetched all skills.
+2025-07-11 11:43:34,472 INFO  - Fetched company for recruiterId=49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff
+2025-07-11 12:15:50,539 INFO  - Fetched all company names.
