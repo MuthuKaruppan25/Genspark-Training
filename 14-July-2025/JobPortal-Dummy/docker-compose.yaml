@@ -1,0 +1,66 @@
+# version: '3.9'
+
+# services:
+#   postgres:
+#     image: postgres:latest
+#     container_name: clinicportal_postgres
+#     environment:
+#       POSTGRES_USER: muthu
+#       POSTGRES_PASSWORD: Muthu123
+#       POSTGRES_DB: ClinicPortaldatabase
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+
+
+#   clinicportal:
+#     build: .
+#     container_name: clinicportal_server
+#     depends_on:
+#       - postgres
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+#       - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=ClinicPortaldatabase;Username=muthu;Password=Muthu123
+#     ports:
+#       - "5001:8080"
+#     command: >
+#       sh -c "dotnet ef database update &&
+#              dotnet SecondWebApi.dll"
+      
+
+
+
+# volumes:
+#   postgres_data:
+
+
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: jobportal_postgres
+    environment:
+      POSTGRES_USER: muthu
+      POSTGRES_PASSWORD: Muthu123
+      POSTGRES_DB: JobPortaldatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  clinicportal:
+    build: .
+    container_name: jobportal_server
+    depends_on:
+      - postgres
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=JobPortaldatabase;Username=muthu;Password=Muthu123
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+
+volumes:
+  postgres_data:

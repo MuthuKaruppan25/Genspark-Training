@@ -1,0 +1,368 @@
+2025-07-12 01:28:36.869 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 01:28:36.877 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal) in 37378.2697ms
+2025-07-12 01:28:36.877 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 01:28:36.877 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - 200 null application/json; charset=utf-8 37379.7848ms
+2025-07-12 01:28:36.881 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - null null
+2025-07-12 01:28:36.882 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:36.882 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - 204 null null 0.7042ms
+2025-07-12 01:28:36.883 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - application/json 336
+2025-07-12 01:28:36.883 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:36.884 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 01:28:36.884 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(JobPortal.Models.DTOs.RefreshTokenRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-07-12 01:28:36.905 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 01:28:37.354 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 01:28:37.355 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal) in 470.8771ms
+2025-07-12 01:28:37.355 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 01:28:37.355 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - 200 null application/json; charset=utf-8 471.9337ms
+2025-07-12 01:28:37.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Seeker/muthu03@gmail.com - null null
+2025-07-12 01:28:37.363 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.363 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - null null
+2025-07-12 01:28:37.364 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal)'
+2025-07-12 01:28:37.364 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.364 +05:30 [INF] Route matched with {action = "GetSeekerByUsername", controller = "Seeker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSeekerByUsername(System.String) on controller JobPortal.Controllers.SeekerController (JobPortal).
+2025-07-12 01:28:37.364 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - 204 null null 0.3417ms
+2025-07-12 01:28:37.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - null null
+2025-07-12 01:28:37.366 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.366 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 01:28:37.367 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal)'
+2025-07-12 01:28:37.367 +05:30 [INF] Route matched with {action = "GetRecruiterByUsername", controller = "Recruiter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecruiterByUsername(System.String) on controller JobPortal.Controllers.RecruiterController (JobPortal).
+2025-07-12 01:28:37.372 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/JobPost/paged - null null
+2025-07-12 01:28:37.372 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.372 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/JobPost/paged - 204 null null 0.4914ms
+2025-07-12 01:28:37.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Company/companies - null null
+2025-07-12 01:28:37.374 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.374 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal)'
+2025-07-12 01:28:37.374 +05:30 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller JobPortal.Controllers.CompanyController (JobPortal).
+2025-07-12 01:28:37.374 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/JobPost/paged - application/json 30
+2025-07-12 01:28:37.375 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.375 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal)'
+2025-07-12 01:28:37.375 +05:30 [INF] Route matched with {action = "GetPagedJobPosts", controller = "JobPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPagedJobPosts(PageDataDto) on controller JobPortal.Controllers.JobPostController (JobPortal).
+2025-07-12 01:28:37.381 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."About", s."ConnectionId", s."DateOfBirth", s."FirstName", s."Gender", s."IsDeleted", s."LastName", s."UserId", s2.guid, s2."SeekerId", s2."SkillId", s2.guid0, s2."Name", e.guid, e."SeekerId", e."collegeName", e."courseName", e.grade, e0."Guid", e0."CompanyName", e0."Description", e0."FromMonth", e0."FromYear", e0."Role", e0."SeekerId", e0."ToMonth", e0."ToYear", s3.guid, s3."AppliedOn", s3."IsDeleted", s3."JobPostId", s3."SeekerId", s3."Status", s3.guid0, s3."Description", s3."EmploymentPosition", s3."EmploymentType", s3."IsDeleted0", s3."LastDate", s3."Maxsalary", s3."Minsalary", s3."PostedDate", s3."RecruiterID", s3."Title", s3.guid1, s3."CompanyId", s3."Designation", s3."FirstName", s3."IsDeleted1", s3."LastName", s3."PhoneNumber", s3."UserId", s3.guid2, s3."CompanyName", s3."Description0", s3."IndustryTypeId", s3."IsDeleted2", s3."WebsiteUrl"
+FROM seekers AS s
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s2 ON s.guid = s2."SeekerId"
+LEFT JOIN educations AS e ON s.guid = e."SeekerId"
+LEFT JOIN experiences AS e0 ON s.guid = e0."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Maxsalary", j0."Minsalary", j0."PostedDate", j0."RecruiterID", j0."Title", r.guid AS guid1, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted" AS "IsDeleted1", r."LastName", r."PhoneNumber", r."UserId", c.guid AS guid2, c."CompanyName", c."Description" AS "Description0", c."IndustryTypeId", c."IsDeleted" AS "IsDeleted2", c."WebsiteUrl"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+    INNER JOIN recruiters AS r ON j0."RecruiterID" = r.guid
+    INNER JOIN companies AS c ON r."CompanyId" = c.guid
+) AS s3 ON s.guid = s3."SeekerId"
+WHERE NOT (s."IsDeleted")
+ORDER BY s.guid, s2.guid, s2.guid0, e.guid, e0."Guid", s3.guid, s3.guid0, s3.guid1
+2025-07-12 01:28:37.382 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Models.Seeker'.
+2025-07-12 01:28:37.383 +05:30 [INF] Executed action JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal) in 18.6599ms
+2025-07-12 01:28:37.383 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal)'
+2025-07-12 01:28:37.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Seeker/muthu03@gmail.com - 200 null application/json; charset=utf-8 19.824ms
+2025-07-12 01:28:37.400 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 01:28:37.402 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", s.guid, s."Description", s."EmploymentPosition", s."EmploymentType", s."IsDeleted", s."LastDate", s."Maxsalary", s."Minsalary", s."PostedDate", s."RecruiterID", s."Title", s.guid0, s."AppliedOn", s."IsDeleted0", s."JobPostId", s."SeekerId", s."Status"
+FROM recruiters AS r
+LEFT JOIN (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", j0.guid AS guid0, j0."AppliedOn", j0."IsDeleted" AS "IsDeleted0", j0."JobPostId", j0."SeekerId", j0."Status"
+    FROM "jobPosts" AS j
+    LEFT JOIN "jobApplications" AS j0 ON j.guid = j0."JobPostId"
+) AS s ON r.guid = s."RecruiterID"
+WHERE NOT (r."IsDeleted")
+ORDER BY r.guid, s.guid
+2025-07-12 01:28:37.402 +05:30 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 01:28:37.402 +05:30 [INF] Executed action JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal) in 35.0611ms
+2025-07-12 01:28:37.402 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal)'
+2025-07-12 01:28:37.403 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - 404 null application/json; charset=utf-8 37.3985ms
+2025-07-12 01:28:37.406 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c.guid, c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", i.guid, r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", i."Name", a.guid, a."AddressLine1", a."AddressLine2", a."AddressType", a."City", a."Country", a."PostalCode", a."State", a."companyId"
+FROM companies AS c
+INNER JOIN "industryTypes" AS i ON c."IndustryTypeId" = i.guid
+LEFT JOIN recruiters AS r ON c.guid = r."CompanyId"
+LEFT JOIN address AS a ON c.guid = a."companyId"
+WHERE NOT (c."IsDeleted")
+ORDER BY c.guid, i.guid, r.guid
+2025-07-12 01:28:37.408 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT j0.guid, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted", j0."LastDate", j0."Maxsalary", j0."Minsalary", j0."PostedDate", j0."RecruiterID", j0."Title", r.guid, s0.guid, s0."JobPostId", s0."SkillId", s0.guid0, s0."Name", l.guid, l."JobPostId", l."Name", r0.guid, r0."Name", r0."PostId", r1.guid, r1."Name", r1."PostId", r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+FROM (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title"
+    FROM "jobPosts" AS j
+    WHERE NOT (j."IsDeleted")
+    ORDER BY j."PostedDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS j0
+INNER JOIN recruiters AS r ON j0."RecruiterID" = r.guid
+LEFT JOIN (
+    SELECT p.guid, p."JobPostId", p."SkillId", s.guid AS guid0, s."Name"
+    FROM "postSkills" AS p
+    INNER JOIN skills AS s ON p."SkillId" = s.guid
+) AS s0 ON j0.guid = s0."JobPostId"
+LEFT JOIN locations AS l ON j0.guid = l."JobPostId"
+LEFT JOIN responsibilities AS r0 ON j0.guid = r0."PostId"
+LEFT JOIN requirements AS r1 ON j0.guid = r1."PostId"
+ORDER BY j0."PostedDate" DESC, j0.guid, r.guid, s0.guid, s0.guid0, l.guid, r0.guid
+2025-07-12 01:28:37.417 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", r.guid, c.guid, s3.guid, s3."JobPostId", s3."SkillId", s3.guid0, s3."Name", r0.guid, r0."Name", r0."PostId", l.guid, l."JobPostId", l."Name", r1.guid, r1."Name", r1."PostId", r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", s5.guid, s5."AppliedOn", s5."IsDeleted", s5."JobPostId", s5."SeekerId", s5."Status", s5.guid0, s5."About", s5."ConnectionId", s5."DateOfBirth", s5."FirstName", s5."Gender", s5."IsDeleted0", s5."LastName", s5."UserId", s5.guid1, s5."SeekerId0", s5."collegeName", s5."courseName", s5.grade, s5."Guid2", s5."CompanyName", s5."Description", s5."FromMonth", s5."FromYear", s5."Role", s5."SeekerId1", s5."ToMonth", s5."ToYear", s5.guid3, s5."SeekerId2", s5."SkillId", s5.guid00, s5."Name"
+FROM "jobPosts" AS j
+INNER JOIN recruiters AS r ON j."RecruiterID" = r.guid
+INNER JOIN companies AS c ON r."CompanyId" = c.guid
+LEFT JOIN (
+    SELECT p.guid, p."JobPostId", p."SkillId", s.guid AS guid0, s."Name"
+    FROM "postSkills" AS p
+    INNER JOIN skills AS s ON p."SkillId" = s.guid
+) AS s3 ON j.guid = s3."JobPostId"
+LEFT JOIN responsibilities AS r0 ON j.guid = r0."PostId"
+LEFT JOIN locations AS l ON j.guid = l."JobPostId"
+LEFT JOIN requirements AS r1 ON j.guid = r1."PostId"
+LEFT JOIN (
+    SELECT j0.guid, j0."AppliedOn", j0."IsDeleted", j0."JobPostId", j0."SeekerId", j0."Status", s0.guid AS guid0, s0."About", s0."ConnectionId", s0."DateOfBirth", s0."FirstName", s0."Gender", s0."IsDeleted" AS "IsDeleted0", s0."LastName", s0."UserId", e.guid AS guid1, e."SeekerId" AS "SeekerId0", e."collegeName", e."courseName", e.grade, e0."Guid" AS "Guid2", e0."CompanyName", e0."Description", e0."FromMonth", e0."FromYear", e0."Role", e0."SeekerId" AS "SeekerId1", e0."ToMonth", e0."ToYear", s4.guid AS guid3, s4."SeekerId" AS "SeekerId2", s4."SkillId", s4.guid0 AS guid00, s4."Name"
+    FROM "jobApplications" AS j0
+    INNER JOIN seekers AS s0 ON j0."SeekerId" = s0.guid
+    LEFT JOIN educations AS e ON s0.guid = e."SeekerId"
+    LEFT JOIN experiences AS e0 ON s0.guid = e0."SeekerId"
+    LEFT JOIN (
+        SELECT s1.guid, s1."SeekerId", s1."SkillId", s2.guid AS guid0, s2."Name"
+        FROM "seekerSkills" AS s1
+        INNER JOIN skills AS s2 ON s1."SkillId" = s2.guid
+    ) AS s4 ON s0.guid = s4."SeekerId"
+) AS s5 ON j.guid = s5."JobPostId"
+WHERE NOT (j."IsDeleted")
+ORDER BY j.guid, r.guid, c.guid, s3.guid, s3.guid0, r0.guid, l.guid, r1.guid, s5.guid, s5.guid0, s5.guid1, s5."Guid2", s5.guid3
+2025-07-12 01:28:37.418 +05:30 [INF] Executing OkObjectResult, writing value of type 'PagedResult`1[[JobPostDto, JobPortal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-12 01:28:37.418 +05:30 [INF] Executed action JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal) in 42.9486ms
+2025-07-12 01:28:37.419 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal)'
+2025-07-12 01:28:37.419 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/JobPost/paged - 200 null application/json; charset=utf-8 44.1836ms
+2025-07-12 01:28:37.422 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Company/ByRecruiter/49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff - null null
+2025-07-12 01:28:37.422 +05:30 [INF] CORS policy execution successful.
+2025-07-12 01:28:37.422 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal)'
+2025-07-12 01:28:37.422 +05:30 [INF] Route matched with {action = "GetCompanyByRecruiterId", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPortal.Models.Company]] GetCompanyByRecruiterId(System.Guid) on controller JobPortal.Controllers.CompanyController (JobPortal).
+2025-07-12 01:28:37.426 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r0.guid, r0."CompanyId", r0."Designation", r0."FirstName", r0."IsDeleted", r0."LastName", r0."PhoneNumber", r0."UserId", s.guid, s."Description", s."EmploymentPosition", s."EmploymentType", s."IsDeleted", s."LastDate", s."Maxsalary", s."Minsalary", s."PostedDate", s."RecruiterID", s."Title", s.guid0, s."AppliedOn", s."IsDeleted0", s."JobPostId", s."SeekerId", s."Status"
+FROM (
+    SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+    FROM recruiters AS r
+    WHERE NOT (r."IsDeleted") AND r.guid = @__key_0
+    LIMIT 1
+) AS r0
+LEFT JOIN (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", j0.guid AS guid0, j0."AppliedOn", j0."IsDeleted" AS "IsDeleted0", j0."JobPostId", j0."SeekerId", j0."Status"
+    FROM "jobPosts" AS j
+    LEFT JOIN "jobApplications" AS j0 ON j.guid = j0."JobPostId"
+) AS s ON r0.guid = s."RecruiterID"
+ORDER BY r0.guid, s.guid
+2025-07-12 01:28:37.428 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."CompanyName", s."Description", s."IndustryTypeId", s."IsDeleted", s."WebsiteUrl", s.guid0, r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", s."Name", a.guid, a."AddressLine1", a."AddressLine2", a."AddressType", a."City", a."Country", a."PostalCode", a."State", a."companyId"
+FROM (
+    SELECT c.guid, c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", i.guid AS guid0, i."Name"
+    FROM companies AS c
+    INNER JOIN "industryTypes" AS i ON c."IndustryTypeId" = i.guid
+    WHERE NOT (c."IsDeleted") AND c.guid = @__key_0
+    LIMIT 1
+) AS s
+LEFT JOIN recruiters AS r ON s.guid = r."CompanyId"
+LEFT JOIN address AS a ON s.guid = a."companyId"
+ORDER BY s.guid, s.guid0, r.guid
+2025-07-12 01:28:37.752 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 01:28:37.752 +05:30 [INF] Executed action JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal) in 377.8983ms
+2025-07-12 01:28:37.752 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal)'
+2025-07-12 01:28:37.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Company/companies - 200 null application/json; charset=utf-8 379.9034ms
+2025-07-12 01:28:38.229 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Models.Company'.
+2025-07-12 01:28:38.230 +05:30 [INF] Executed action JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal) in 807.5583ms
+2025-07-12 01:28:38.230 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal)'
+2025-07-12 01:28:38.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Company/ByRecruiter/49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff - 200 null application/json; charset=utf-8 808.5298ms
+2025-07-12 02:00:25.177 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - null null
+2025-07-12 02:00:25.177 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:25.177 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - 204 null null 0.4668ms
+2025-07-12 02:00:25.179 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - application/json 336
+2025-07-12 02:00:25.179 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:25.180 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 02:00:25.180 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(JobPortal.Models.DTOs.RefreshTokenRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-07-12 02:00:25.182 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 02:00:26.661 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 02:00:26.661 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal) in 1480.904ms
+2025-07-12 02:00:26.661 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 02:00:26.661 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - 200 null application/json; charset=utf-8 1482.5169ms
+2025-07-12 02:00:26.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Seeker/muthu03@gmail.com - null null
+2025-07-12 02:00:26.675 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - null null
+2025-07-12 02:00:26.675 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.675 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.675 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - 204 null null 0.5323ms
+2025-07-12 02:00:26.675 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal)'
+2025-07-12 02:00:26.676 +05:30 [INF] Route matched with {action = "GetSeekerByUsername", controller = "Seeker"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSeekerByUsername(System.String) on controller JobPortal.Controllers.SeekerController (JobPortal).
+2025-07-12 02:00:26.677 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - null null
+2025-07-12 02:00:26.678 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.678 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 02:00:26.679 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal)'
+2025-07-12 02:00:26.679 +05:30 [INF] Route matched with {action = "GetRecruiterByUsername", controller = "Recruiter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecruiterByUsername(System.String) on controller JobPortal.Controllers.RecruiterController (JobPortal).
+2025-07-12 02:00:26.682 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/JobPost/paged - null null
+2025-07-12 02:00:26.682 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.682 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 02:00:26.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Company/companies - null null
+2025-07-12 02:00:26.682 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/JobPost/paged - 204 null null 0.8821ms
+2025-07-12 02:00:26.683 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.683 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal)'
+2025-07-12 02:00:26.683 +05:30 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller JobPortal.Controllers.CompanyController (JobPortal).
+2025-07-12 02:00:26.684 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."About", s."ConnectionId", s."DateOfBirth", s."FirstName", s."Gender", s."IsDeleted", s."LastName", s."UserId", s2.guid, s2."SeekerId", s2."SkillId", s2.guid0, s2."Name", e.guid, e."SeekerId", e."collegeName", e."courseName", e.grade, e0."Guid", e0."CompanyName", e0."Description", e0."FromMonth", e0."FromYear", e0."Role", e0."SeekerId", e0."ToMonth", e0."ToYear", s3.guid, s3."AppliedOn", s3."IsDeleted", s3."JobPostId", s3."SeekerId", s3."Status", s3.guid0, s3."Description", s3."EmploymentPosition", s3."EmploymentType", s3."IsDeleted0", s3."LastDate", s3."Maxsalary", s3."Minsalary", s3."PostedDate", s3."RecruiterID", s3."Title", s3.guid1, s3."CompanyId", s3."Designation", s3."FirstName", s3."IsDeleted1", s3."LastName", s3."PhoneNumber", s3."UserId", s3.guid2, s3."CompanyName", s3."Description0", s3."IndustryTypeId", s3."IsDeleted2", s3."WebsiteUrl"
+FROM seekers AS s
+LEFT JOIN (
+    SELECT s0.guid, s0."SeekerId", s0."SkillId", s1.guid AS guid0, s1."Name"
+    FROM "seekerSkills" AS s0
+    INNER JOIN skills AS s1 ON s0."SkillId" = s1.guid
+) AS s2 ON s.guid = s2."SeekerId"
+LEFT JOIN educations AS e ON s.guid = e."SeekerId"
+LEFT JOIN experiences AS e0 ON s.guid = e0."SeekerId"
+LEFT JOIN (
+    SELECT j.guid, j."AppliedOn", j."IsDeleted", j."JobPostId", j."SeekerId", j."Status", j0.guid AS guid0, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted" AS "IsDeleted0", j0."LastDate", j0."Maxsalary", j0."Minsalary", j0."PostedDate", j0."RecruiterID", j0."Title", r.guid AS guid1, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted" AS "IsDeleted1", r."LastName", r."PhoneNumber", r."UserId", c.guid AS guid2, c."CompanyName", c."Description" AS "Description0", c."IndustryTypeId", c."IsDeleted" AS "IsDeleted2", c."WebsiteUrl"
+    FROM "jobApplications" AS j
+    INNER JOIN "jobPosts" AS j0 ON j."JobPostId" = j0.guid
+    INNER JOIN recruiters AS r ON j0."RecruiterID" = r.guid
+    INNER JOIN companies AS c ON r."CompanyId" = c.guid
+) AS s3 ON s.guid = s3."SeekerId"
+WHERE NOT (s."IsDeleted")
+ORDER BY s.guid, s2.guid, s2.guid0, e.guid, e0."Guid", s3.guid, s3.guid0, s3.guid1
+2025-07-12 02:00:26.685 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/JobPost/paged - application/json 30
+2025-07-12 02:00:26.685 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.686 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", s.guid, s."Description", s."EmploymentPosition", s."EmploymentType", s."IsDeleted", s."LastDate", s."Maxsalary", s."Minsalary", s."PostedDate", s."RecruiterID", s."Title", s.guid0, s."AppliedOn", s."IsDeleted0", s."JobPostId", s."SeekerId", s."Status"
+FROM recruiters AS r
+LEFT JOIN (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", j0.guid AS guid0, j0."AppliedOn", j0."IsDeleted" AS "IsDeleted0", j0."JobPostId", j0."SeekerId", j0."Status"
+    FROM "jobPosts" AS j
+    LEFT JOIN "jobApplications" AS j0 ON j.guid = j0."JobPostId"
+) AS s ON r.guid = s."RecruiterID"
+WHERE NOT (r."IsDeleted")
+ORDER BY r.guid, s.guid
+2025-07-12 02:00:26.686 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal)'
+2025-07-12 02:00:26.686 +05:30 [INF] Route matched with {action = "GetPagedJobPosts", controller = "JobPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPagedJobPosts(PageDataDto) on controller JobPortal.Controllers.JobPostController (JobPortal).
+2025-07-12 02:00:26.686 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Models.Seeker'.
+2025-07-12 02:00:26.686 +05:30 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 02:00:26.687 +05:30 [INF] Executed action JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal) in 7.1359ms
+2025-07-12 02:00:26.687 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.RecruiterController.GetRecruiterByUsername (JobPortal)'
+2025-07-12 02:00:26.687 +05:30 [INF] Executed action JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal) in 10.887ms
+2025-07-12 02:00:26.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Recruiter/by-username/muthu03@gmail.com - 404 null application/json; charset=utf-8 9.9049ms
+2025-07-12 02:00:26.687 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.SeekerController.GetSeekerByUsername (JobPortal)'
+2025-07-12 02:00:26.687 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c.guid, c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", i.guid, r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", i."Name", a.guid, a."AddressLine1", a."AddressLine2", a."AddressType", a."City", a."Country", a."PostalCode", a."State", a."companyId"
+FROM companies AS c
+INNER JOIN "industryTypes" AS i ON c."IndustryTypeId" = i.guid
+LEFT JOIN recruiters AS r ON c.guid = r."CompanyId"
+LEFT JOIN address AS a ON c.guid = a."companyId"
+WHERE NOT (c."IsDeleted")
+ORDER BY c.guid, i.guid, r.guid
+2025-07-12 02:00:26.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Seeker/muthu03@gmail.com - 200 null application/json; charset=utf-8 12.6945ms
+2025-07-12 02:00:26.693 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT j0.guid, j0."Description", j0."EmploymentPosition", j0."EmploymentType", j0."IsDeleted", j0."LastDate", j0."Maxsalary", j0."Minsalary", j0."PostedDate", j0."RecruiterID", j0."Title", r.guid, s0.guid, s0."JobPostId", s0."SkillId", s0.guid0, s0."Name", l.guid, l."JobPostId", l."Name", r0.guid, r0."Name", r0."PostId", r1.guid, r1."Name", r1."PostId", r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+FROM (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title"
+    FROM "jobPosts" AS j
+    WHERE NOT (j."IsDeleted")
+    ORDER BY j."PostedDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS j0
+INNER JOIN recruiters AS r ON j0."RecruiterID" = r.guid
+LEFT JOIN (
+    SELECT p.guid, p."JobPostId", p."SkillId", s.guid AS guid0, s."Name"
+    FROM "postSkills" AS p
+    INNER JOIN skills AS s ON p."SkillId" = s.guid
+) AS s0 ON j0.guid = s0."JobPostId"
+LEFT JOIN locations AS l ON j0.guid = l."JobPostId"
+LEFT JOIN responsibilities AS r0 ON j0.guid = r0."PostId"
+LEFT JOIN requirements AS r1 ON j0.guid = r1."PostId"
+ORDER BY j0."PostedDate" DESC, j0.guid, r.guid, s0.guid, s0.guid0, l.guid, r0.guid
+2025-07-12 02:00:26.698 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", r.guid, c.guid, s3.guid, s3."JobPostId", s3."SkillId", s3.guid0, s3."Name", r0.guid, r0."Name", r0."PostId", l.guid, l."JobPostId", l."Name", r1.guid, r1."Name", r1."PostId", r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", s5.guid, s5."AppliedOn", s5."IsDeleted", s5."JobPostId", s5."SeekerId", s5."Status", s5.guid0, s5."About", s5."ConnectionId", s5."DateOfBirth", s5."FirstName", s5."Gender", s5."IsDeleted0", s5."LastName", s5."UserId", s5.guid1, s5."SeekerId0", s5."collegeName", s5."courseName", s5.grade, s5."Guid2", s5."CompanyName", s5."Description", s5."FromMonth", s5."FromYear", s5."Role", s5."SeekerId1", s5."ToMonth", s5."ToYear", s5.guid3, s5."SeekerId2", s5."SkillId", s5.guid00, s5."Name"
+FROM "jobPosts" AS j
+INNER JOIN recruiters AS r ON j."RecruiterID" = r.guid
+INNER JOIN companies AS c ON r."CompanyId" = c.guid
+LEFT JOIN (
+    SELECT p.guid, p."JobPostId", p."SkillId", s.guid AS guid0, s."Name"
+    FROM "postSkills" AS p
+    INNER JOIN skills AS s ON p."SkillId" = s.guid
+) AS s3 ON j.guid = s3."JobPostId"
+LEFT JOIN responsibilities AS r0 ON j.guid = r0."PostId"
+LEFT JOIN locations AS l ON j.guid = l."JobPostId"
+LEFT JOIN requirements AS r1 ON j.guid = r1."PostId"
+LEFT JOIN (
+    SELECT j0.guid, j0."AppliedOn", j0."IsDeleted", j0."JobPostId", j0."SeekerId", j0."Status", s0.guid AS guid0, s0."About", s0."ConnectionId", s0."DateOfBirth", s0."FirstName", s0."Gender", s0."IsDeleted" AS "IsDeleted0", s0."LastName", s0."UserId", e.guid AS guid1, e."SeekerId" AS "SeekerId0", e."collegeName", e."courseName", e.grade, e0."Guid" AS "Guid2", e0."CompanyName", e0."Description", e0."FromMonth", e0."FromYear", e0."Role", e0."SeekerId" AS "SeekerId1", e0."ToMonth", e0."ToYear", s4.guid AS guid3, s4."SeekerId" AS "SeekerId2", s4."SkillId", s4.guid0 AS guid00, s4."Name"
+    FROM "jobApplications" AS j0
+    INNER JOIN seekers AS s0 ON j0."SeekerId" = s0.guid
+    LEFT JOIN educations AS e ON s0.guid = e."SeekerId"
+    LEFT JOIN experiences AS e0 ON s0.guid = e0."SeekerId"
+    LEFT JOIN (
+        SELECT s1.guid, s1."SeekerId", s1."SkillId", s2.guid AS guid0, s2."Name"
+        FROM "seekerSkills" AS s1
+        INNER JOIN skills AS s2 ON s1."SkillId" = s2.guid
+    ) AS s4 ON s0.guid = s4."SeekerId"
+) AS s5 ON j.guid = s5."JobPostId"
+WHERE NOT (j."IsDeleted")
+ORDER BY j.guid, r.guid, c.guid, s3.guid, s3.guid0, r0.guid, l.guid, r1.guid, s5.guid, s5.guid0, s5.guid1, s5."Guid2", s5.guid3
+2025-07-12 02:00:26.700 +05:30 [INF] Executing OkObjectResult, writing value of type 'PagedResult`1[[JobPostDto, JobPortal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-12 02:00:26.700 +05:30 [INF] Executed action JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal) in 13.804ms
+2025-07-12 02:00:26.700 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.JobPostController.GetPagedJobPosts (JobPortal)'
+2025-07-12 02:00:26.700 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/JobPost/paged - 200 null application/json; charset=utf-8 15.3668ms
+2025-07-12 02:00:26.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/v1/Company/ByRecruiter/49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff - null null
+2025-07-12 02:00:26.708 +05:30 [INF] CORS policy execution successful.
+2025-07-12 02:00:26.708 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal)'
+2025-07-12 02:00:26.708 +05:30 [INF] Route matched with {action = "GetCompanyByRecruiterId", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPortal.Models.Company]] GetCompanyByRecruiterId(System.Guid) on controller JobPortal.Controllers.CompanyController (JobPortal).
+2025-07-12 02:00:26.710 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r0.guid, r0."CompanyId", r0."Designation", r0."FirstName", r0."IsDeleted", r0."LastName", r0."PhoneNumber", r0."UserId", s.guid, s."Description", s."EmploymentPosition", s."EmploymentType", s."IsDeleted", s."LastDate", s."Maxsalary", s."Minsalary", s."PostedDate", s."RecruiterID", s."Title", s.guid0, s."AppliedOn", s."IsDeleted0", s."JobPostId", s."SeekerId", s."Status"
+FROM (
+    SELECT r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId"
+    FROM recruiters AS r
+    WHERE NOT (r."IsDeleted") AND r.guid = @__key_0
+    LIMIT 1
+) AS r0
+LEFT JOIN (
+    SELECT j.guid, j."Description", j."EmploymentPosition", j."EmploymentType", j."IsDeleted", j."LastDate", j."Maxsalary", j."Minsalary", j."PostedDate", j."RecruiterID", j."Title", j0.guid AS guid0, j0."AppliedOn", j0."IsDeleted" AS "IsDeleted0", j0."JobPostId", j0."SeekerId", j0."Status"
+    FROM "jobPosts" AS j
+    LEFT JOIN "jobApplications" AS j0 ON j.guid = j0."JobPostId"
+) AS s ON r0.guid = s."RecruiterID"
+ORDER BY r0.guid, s.guid
+2025-07-12 02:00:26.711 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s.guid, s."CompanyName", s."Description", s."IndustryTypeId", s."IsDeleted", s."WebsiteUrl", s.guid0, r.guid, r."CompanyId", r."Designation", r."FirstName", r."IsDeleted", r."LastName", r."PhoneNumber", r."UserId", s."Name", a.guid, a."AddressLine1", a."AddressLine2", a."AddressType", a."City", a."Country", a."PostalCode", a."State", a."companyId"
+FROM (
+    SELECT c.guid, c."CompanyName", c."Description", c."IndustryTypeId", c."IsDeleted", c."WebsiteUrl", i.guid AS guid0, i."Name"
+    FROM companies AS c
+    INNER JOIN "industryTypes" AS i ON c."IndustryTypeId" = i.guid
+    WHERE NOT (c."IsDeleted") AND c.guid = @__key_0
+    LIMIT 1
+) AS s
+LEFT JOIN recruiters AS r ON s.guid = r."CompanyId"
+LEFT JOIN address AS a ON s.guid = a."companyId"
+ORDER BY s.guid, s.guid0, r.guid
+2025-07-12 02:00:27.026 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 02:00:27.026 +05:30 [INF] Executed action JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal) in 343.0412ms
+2025-07-12 02:00:27.027 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.CompanyController.GetAllCompanies (JobPortal)'
+2025-07-12 02:00:27.027 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Company/companies - 200 null application/json; charset=utf-8 344.7686ms
+2025-07-12 02:00:27.357 +05:30 [INF] Executing OkObjectResult, writing value of type 'JobPortal.Models.Company'.
+2025-07-12 02:00:27.357 +05:30 [INF] Executed action JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal) in 649.611ms
+2025-07-12 02:00:27.358 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.CompanyController.GetCompanyByRecruiterId (JobPortal)'
+2025-07-12 02:00:27.358 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/v1/Company/ByRecruiter/49feb4cf-3ea2-453b-9fcd-b6f23f9b9dff - 200 null application/json; charset=utf-8 650.6118ms
+2025-07-12 07:20:17.100 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - null null
+2025-07-12 07:20:17.101 +05:30 [INF] CORS policy execution successful.
+2025-07-12 07:20:17.101 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/v1/Authentication/refresh-token - 204 null null 1.0247ms
+2025-07-12 07:20:17.104 +05:30 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - application/json 336
+2025-07-12 07:20:17.104 +05:30 [INF] CORS policy execution successful.
+2025-07-12 07:20:17.105 +05:30 [INF] Executing endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 07:20:17.105 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(JobPortal.Models.DTOs.RefreshTokenRequestDto) on controller JobPortal.Controllers.AuthenticationController (JobPortal).
+2025-07-12 07:20:17.123 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u.guid, u."HashKey", u."IsDeleted", u."PasswordHash", u."RefreshToken", u."RefreshTokenExpiryTime", u."Role", u."Username"
+FROM users AS u
+2025-07-12 09:12:08.700 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-12 09:12:08.702 +05:30 [INF] Executed action JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal) in 24864.0513ms
+2025-07-12 09:12:08.702 +05:30 [INF] Executed endpoint 'JobPortal.Controllers.AuthenticationController.RefreshToken (JobPortal)'
+2025-07-12 09:12:08.702 +05:30 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Authentication/refresh-token - 499 null application/json; charset=utf-8 24865.4249ms

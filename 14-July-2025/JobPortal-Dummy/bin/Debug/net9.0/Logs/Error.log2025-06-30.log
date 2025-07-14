@@ -1,0 +1,3 @@
+2025-06-30 19:47:48,731 ERROR - Login failed
+JobPortal.Exceptions.AuthenticationException: Invalid username or password
+   at AuthenticationService.LoginAsync(LoginRequestDto loginRequestDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 35

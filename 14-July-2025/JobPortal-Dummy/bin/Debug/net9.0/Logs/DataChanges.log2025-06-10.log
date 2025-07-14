@@ -1,0 +1,18 @@
+2025-06-10 15:16:13,752 [20] INFO  - Skill added: React
+2025-06-10 15:16:34,901 [22] INFO  - Skill added: Python
+2025-06-10 15:16:35,981 [22] WARN  - Duplicate skill attempted: Python
+JobPortal.Exceptions.DuplicateEntryException: Skill already exists.
+   at SkillsService.AddSkill(SkillRegisterDto skillRegisterDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/SkillsService.cs:line 28
+2025-06-10 15:17:53,550 [24] INFO  - Seeker registered: Email = johndoe@example.com, SeekerId = John
+2025-06-10 15:18:44,082 [14] INFO  - Company registered: Name = TechNova Solutions, CompanyId = a2261524-9c72-4bed-99fe-36f8c5db9e00
+2025-06-10 15:19:09,737 [24] INFO  - Recruiter registered successfully: Email=muthu@gmail.com, Company=TechNova Solutions
+2025-06-10 15:20:03,793 [25] INFO  - JobPost added by recruiter: 048b5cf6-8590-459a-8128-0057fca872e4, Job Title: Full Stack Developer
+2025-06-10 15:23:23,318 [15] INFO  - Resume uploaded: SeekerId = 6c2510e8-809f-4364-8b9e-5ced83d5f18e, JobPostId = de5e63b4-57cc-4d9c-91a8-fa890d430a0c
+2025-06-10 15:23:23,326 [15] INFO  - Job application created for SeekerId = 6c2510e8-809f-4364-8b9e-5ced83d5f18e, JobPostId = de5e63b4-57cc-4d9c-91a8-fa890d430a0c
+2025-06-10 15:24:16,868 [23] ERROR - Resume not found during download
+JobPortal.Exceptions.RecordNotFoundException: Resume not found for the specified seeker and job post.
+   at FileService.DownloadFileAsync(FileGetRequestDto fileGetRequestDto) in /Users/presidio/Desktop/Backend-Task/JobPortal/Services/FileService.cs:line 97
+2025-06-10 15:25:31,827 [27] INFO  - Resume downloaded: SeekerId = 6c2510e8-809f-4364-8b9e-5ced83d5f18e, JobPostId = de5e63b4-57cc-4d9c-91a8-fa890d430a0c
+2025-06-10 15:44:37,418 [38] INFO  - User logged in: muthu@gmail.com
+2025-06-10 15:45:12,160 [7] INFO  - User logged in: muthu@gmail.com
+2025-06-10 15:46:12,747 [16] INFO  - Soft deleted job post: de5e63b4-57cc-4d9c-91a8-fa890d430a0c, RecruiterId: 048b5cf6-8590-459a-8128-0057fca872e4

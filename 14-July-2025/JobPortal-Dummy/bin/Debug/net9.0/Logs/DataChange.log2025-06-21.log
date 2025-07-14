@@ -1,0 +1,26 @@
+2025-06-21 15:57:27,937 INFO  - Skill added: React
+2025-06-21 15:57:39,128 INFO  - Seeker registered: Email = gowtham@gmail.com, SeekerId = Muthu
+2025-06-21 16:01:29,982 INFO  - User logged in: gowtham@gmail.com
+2025-06-21 16:02:00,739 INFO  - Updated experiences for seeker gowtham@gmail.com (ID: 2ed59ebd-2900-4869-8795-dfb4572dffc4)
+2025-06-21 18:23:00,032 INFO  - Fetched all skills.
+2025-06-21 19:01:26,406 INFO  - Fetched all companies.
+2025-06-21 19:01:37,278 INFO  - Fetched all companies.
+2025-06-21 19:01:39,226 INFO  - Fetched all companies.
+2025-06-21 19:09:20,941 INFO  - Industry type added: Name = Information Technology, Id = 080e588a-97f4-45e4-ae5b-e5120f80a08e
+2025-06-21 19:09:23,806 INFO  - Company registered: Name = TechNova Solutions, CompanyId = bb23be10-10b7-403f-b29a-203da605f879
+2025-06-21 19:09:51,531 INFO  - Fetched all companies.
+2025-06-21 19:10:23,226 INFO  - Fetched all companies.
+2025-06-21 19:10:51,308 INFO  - Fetched all companies.
+2025-06-21 19:11:25,406 INFO  - Fetched all company names.
+2025-06-21 19:12:10,417 INFO  - Recruiter registered successfully: Email=muthu@gmail.com, Company=TechNova Solutions
+2025-06-21 20:03:52,750 INFO  - Fetched all company names.
+2025-06-21 20:04:20,849 INFO  - User logged in: muthu@gmail.com
+2025-06-21 21:18:45,776 INFO  - Fetched all skills.
+2025-06-21 21:19:33,485 INFO  - Fetched all skills.
+2025-06-21 21:19:45,511 INFO  - Fetched all skills.
+2025-06-21 21:20:34,729 INFO  - Fetched all skills.
+2025-06-21 21:20:57,338 INFO  - Fetched all skills.
+2025-06-21 21:21:48,192 INFO  - Fetched all skills.
+2025-06-21 21:22:01,552 INFO  - Fetched all skills.
+2025-06-21 21:22:04,281 INFO  - Fetched all skills.
+2025-06-21 21:22:09,367 INFO  - Fetched all skills.
