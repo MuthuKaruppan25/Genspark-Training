@@ -1,0 +1,72 @@
+<div class="payment-card">
+  <h2>Make a Payment</h2>
+  <form [formGroup]="paymentForm" (ngSubmit)="pay()">
+    <div class="form-field">
+      <label>Name</label>
+      <input formControlName="name" type="text" placeholder="Enter name" />
+      <div class="error" *ngIf="paymentForm.get('name')?.invalid && paymentForm.get('name')?.touched">
+        Name is required
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Email</label>
+      <input formControlName="email" type="email" placeholder="Enter email" />
+      <div class="error" *ngIf="paymentForm.get('email')?.invalid && paymentForm.get('email')?.touched">
+        Enter a valid email
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Contact Number</label>
+      <input formControlName="contact" type="text" placeholder="Enter 10-digit mobile number" />
+      <div class="error" *ngIf="paymentForm.get('contact')?.invalid && paymentForm.get('contact')?.touched">
+        Enter a 10-digit contact number
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Amount</label>
+      <input formControlName="amount" type="number" placeholder="Enter amount" />
+      <div class="error" *ngIf="paymentForm.get('amount')?.invalid && paymentForm.get('amount')?.touched">
+        Amount must be greater than 0
+      </div>
+    </div>
+    <button type="submit" class="pay-btn">Pay Now</button>
+  </form>
+
+  <div
+    class="status"
+    [ngClass]="{
+      'success': paymentStatus && paymentStatus.includes('Successful'),
+      'failure': paymentStatus && paymentStatus.includes('Failed')
+    }"
+    *ngIf="paymentStatus"
+  >
+    {{ paymentStatus }}
+  </div>
+
+  <button class="history-btn" (click)="toggleHistory()">View Payment History</button>
+</div>
+
+<div *ngIf="showHistory && paymentHistory.length" class="history-container">
+  <h3>Payment History</h3>
+  <div class="history-card" *ngFor="let p of paymentHistory">
+    <div class="history-row">
+      <strong>Name:</strong> {{ p.name }}
+    </div>
+    <div class="history-row">
+      <strong>Email:</strong> {{ p.email }}
+    </div>
+    <div class="history-row">
+      <strong>Amount:</strong> ₹{{ p.amount }}
+    </div>
+    <div class="history-row">
+      <strong>Status:</strong>
+      <span [ngClass]="{'success': p.status==='Success', 'failure': p.status==='Failed'}">{{p.status}}</span>
+    </div>
+    <div class="history-row" *ngIf="p.paymentId">
+      <strong>Payment ID:</strong> {{ p.paymentId }}
+    </div>
+    <div class="history-row">
+      <strong>Date:</strong> {{ p.date | date:'short' }}
+    </div>
+  </div>
+</div>
