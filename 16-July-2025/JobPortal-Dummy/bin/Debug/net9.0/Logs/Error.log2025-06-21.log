@@ -1,0 +1,32 @@
+2025-06-21 16:01:48,282 ERROR - Seeker registration failed
+JobPortal.Exceptions.DuplicateEntryException: User with the given name already exists.
+   at TransactionalSeekerService.RegisterSeekerWithTransaction(SeekerRegisterDto dto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionSeekerRegisterDto.cs:line 42
+   at TransactionalSeekerService.RegisterSeekerWithTransaction(SeekerRegisterDto dto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionSeekerRegisterDto.cs:line 83
+   at SeekerService.RegisterSeeker(SeekerRegisterDto dto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 57
+2025-06-21 16:06:38,781 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 16:09:23,371 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 16:10:19,808 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 17:58:53,712 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 18:01:34,870 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 18:02:30,126 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 18:07:16,879 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 18:09:04,613 ERROR - Failed to update seeker experiences
+System.UnauthorizedAccessException: You are not authorized to update this seeker.
+   at SeekerService.UpdateSeekerExperiences(String username, SeekerExperienceUpdateDto dto, ClaimsPrincipal userPrincipal) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/SeekerService.cs:line 235
+2025-06-21 19:08:57,710 ERROR - Industry type error during company registration
+JobPortal.Exceptions.RecordNotFoundException: Industry type 'Information Technology' not found and could not be created.
+   at CompanyService.RegisterCompany(CompanyRegisterDto companyRegisterDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/CompanyService.cs:line 61

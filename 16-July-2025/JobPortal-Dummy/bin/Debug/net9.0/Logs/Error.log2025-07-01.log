@@ -1,0 +1,24 @@
+2025-07-01 21:14:17,195 ERROR - Industry type error during company registration
+JobPortal.Exceptions.RecordNotFoundException: Industry type 'Agriculture' not found and could not be created.
+   at CompanyService.RegisterCompany(CompanyRegisterDto companyRegisterDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/CompanyService.cs:line 61
+2025-07-01 21:17:41,186 ERROR - Field required exception during AddJobPost
+JobPortal.Exceptions.FieldRequiredException: Responsibilities not provided.
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 78
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 123
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 124
+   at JobPostService.AddJobPost(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/JobPostService.cs:line 72
+2025-07-01 21:25:00,716 ERROR - Field required exception during AddJobPost
+JobPortal.Exceptions.FieldRequiredException: Last date must be at least 2 days from now.
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 59
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 123
+   at TransactionalJobPostService.AddJobPostAsync(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Misc/TransactionalJobPostService.cs:line 124
+   at JobPostService.AddJobPost(JobPostResponse jobPostDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/JobPostService.cs:line 72
+2025-07-01 21:49:44,173 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-01 21:54:32,764 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78
+2025-07-01 22:05:59,749 ERROR - Token refresh failed
+JobPortal.Exceptions.AuthenticationException: Invalid or expired refresh token
+   at AuthenticationService.RefreshTokenAsync(String expiredToken, String refreshToken) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/AuthenticationService.cs:line 78

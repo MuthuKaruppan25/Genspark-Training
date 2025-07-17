@@ -1,0 +1,21 @@
+2025-06-12 12:27:33,546 INFO  - Skill updated: React
+2025-06-12 14:32:14,757 INFO  - Skill added: Azure
+2025-06-12 15:21:24,188 INFO  - User logged in: mano@gmail.com
+2025-06-12 15:23:27,791 INFO  - User logged in: mano@gmail.com
+2025-06-12 15:24:02,440 INFO  - JobPost added by recruiter: 34a5a981-70c2-43cc-8403-e0208dc1a2fd, Job Title: Product Developer
+2025-06-12 15:24:19,819 INFO  - Soft deleted job post: 10e35390-fcfa-4619-9775-b7030a22d69b, RecruiterId: 34a5a981-70c2-43cc-8403-e0208dc1a2fd
+2025-06-12 15:31:55,618 INFO  - User logged in: gowtham@gmail.com
+2025-06-12 17:39:50,119 INFO  - User logged in: mano@gmail.com
+2025-06-12 17:39:56,354 INFO  - JobPost added by recruiter: 34a5a981-70c2-43cc-8403-e0208dc1a2fd, Job Title: Product Developer
+2025-06-12 17:57:40,624 INFO  - Soft deleted job post: 9e7cfef2-6b3e-467f-a2dd-23e1c2ac56db, RecruiterId: 34a5a981-70c2-43cc-8403-e0208dc1a2fd
+2025-06-12 18:56:38,730 INFO  - Skill added: Firebase
+2025-06-12 19:16:23,851 INFO  - Skill added: CSharp
+2025-06-12 19:22:41,276 INFO  - User logged in: mano@gmail.com
+2025-06-12 19:22:46,811 INFO  - Recruiter updated successfully: Id=34a5a981-70c2-43cc-8403-e0208dc1a2fd, Name=Mano Sundar
+2025-06-12 20:51:50,626 INFO  - User logged in: gowtham@gmail.com
+2025-06-12 21:06:49,961 INFO  - User logged in: mano@gmail.com
+2025-06-12 21:09:59,873 INFO  - JobPost added by recruiter: 34a5a981-70c2-43cc-8403-e0208dc1a2fd, Job Title: Product Developer
+2025-06-12 21:10:14,426 INFO  - Soft deleted job post: 6a6efa7a-1f04-4509-91b0-2e52d1d71e57, RecruiterId: 34a5a981-70c2-43cc-8403-e0208dc1a2fd
+2025-06-12 21:11:21,166 INFO  - JobPost added by recruiter: 34a5a981-70c2-43cc-8403-e0208dc1a2fd, Job Title: Product Developer
+2025-06-12 21:12:25,489 INFO  - Updated job post: af217430-abb9-4a6e-bbcc-01842245c0c7
+2025-06-12 21:13:39,286 INFO  - Soft deleted job post: af217430-abb9-4a6e-bbcc-01842245c0c7, RecruiterId: 34a5a981-70c2-43cc-8403-e0208dc1a2fd
