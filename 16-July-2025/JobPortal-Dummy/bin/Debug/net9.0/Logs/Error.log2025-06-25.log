@@ -1,0 +1,6 @@
+2025-06-25 13:05:24,255 ERROR - Resume not found during download
+JobPortal.Exceptions.RecordNotFoundException: Resume not found for the specified seeker and job post.
+   at FileService.DownloadFileAsync(FileGetRequestDto fileGetRequestDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/FileService.cs:line 97
+2025-06-25 13:07:29,980 ERROR - Resume not found during download
+JobPortal.Exceptions.RecordNotFoundException: Resume not found for the specified seeker and job post.
+   at FileService.DownloadFileAsync(FileGetRequestDto fileGetRequestDto) in /Users/presidio/Desktop/Tasks/Backend-WebApi/JobPortal/Services/FileService.cs:line 97
