@@ -1,0 +1,24 @@
+<h2 class="page-title">Available Videos</h2>
+<div class="search-container">
+  <input
+    type="text"
+    class="search-input"
+    placeholder="Search videos by title or description..."
+    [(ngModel)]="searchQuery"
+    (input)="onSearchChange()"
+  />
+</div>
+
+<div class="video-list">
+  <div class="video-card" *ngFor="let video of videos">
+
+    <video class="video-player" controls [src]="getStreamUrl(video.id)">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="video-info">
+      <h3 class="video-title">{{ video.title }}</h3>
+      <p class="video-description">{{ video.description }}</p>
+    </div>
+  </div>
+</div>
